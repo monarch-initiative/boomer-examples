@@ -61,7 +61,8 @@ def _load_default_info(msdf:MappingSetDataFrame)-> MappingSetDataFrame:
 @click.option("--config", "-c", type=click.Path(exists=True), help=f"Path to the config folder.")
 @click.option("--source-location", "-s", type=click.Path() , help=f"Path to source of individual sssom.tsv files.")
 @click.option("--target-location", "-t", type=click.Path(), help=f"Path to save the combined.sssom.tsv and prefix.yaml files.")
-def run(config:Path, source_location:Path, target_location:Path):
+@click.option("--run-id", "-i", type=str, help=f"Run id.")
+def run(config:Path, source_location:Path, target_location:Path, run_id:str):
     # Variables
     PREFIX_YAML_FILE = join(target_location, "prefix.yaml")
     COMBINED_SSSOM = join(target_location, "combined.sssom.tsv")
@@ -69,7 +70,7 @@ def run(config:Path, source_location:Path, target_location:Path):
     with open(config, "rb") as c:
         config_yaml = yaml.safe_load(c)
 
-    _, id = target_location.split('/')
+    id = run_id
 
     concerned_run_list = [
                         info for info in config_yaml["config"]["boomer_config"]["runs"]
