@@ -12,8 +12,7 @@ $(DATA_DIR)/ $(BOOMER_INPUT_DIR)/ $(BOOMER_OUTPUT_DIR)/:
 #####################
 
 $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl: | $(BOOMER_INPUT_DIR)/
-	echo "WARNING: skipped $@"
-	#wget https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/ordo.owl -O $@
+	wget https://www.dropbox.com/s/q82fm7oxl1m16mh/symbiont-merged-all.owl?dl=0 -O $@
 
 #####################
 ## Mappings #########
@@ -28,7 +27,8 @@ $(BOOMER_INPUT_DIR)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml: $(ALL_MA
 	python scripts/gen_boomer_input.py run \
 		--source-location $(DATA_DIR) \
 		--target-location $(BOOMER_INPUT_DIR)/ \
-		--config mondo-omim-ordo-do.symbiont.yaml
+		--config mondo-omim-ordo-do.symbiont.yaml \
+		--run-id mondo_all
 
 $(BOOMER_INPUT_DIR)/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/combined.sssom.tsv
 	sssom ptable $< -o $@
