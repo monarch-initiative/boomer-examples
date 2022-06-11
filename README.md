@@ -1,5 +1,11 @@
 # Boomer examples
 
+Go to the test project:
+
+```
+cd omim-ordo-do
+```
+
 Download ontology (too big to check in):
 
 ```
