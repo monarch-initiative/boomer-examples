@@ -5,20 +5,20 @@ PROJECT=mondo-omim-ordo
 
 ALL_RUNS=all
 
-$(DATA_DIR)/ $(BOOMER_INPUT_DIR)/ $(BOOMER_OUTPUT_DIR)/:
+$(DATA_DIR)/ $(BOOMER_INPUT_DIR)/ $(BOOMER_OUTPUT_DIR)/ tmp/:
 	mkdir -p $@
 
 #####################
 ## Ontologies #######
 #####################
 
-tmp/mondo.owl:
+tmp/mondo.owl: | tmp/
 	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
 
-tmp/ordo.owl:
+tmp/ordo.owl: | tmp/
 	wget https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/ordo.owl -O $@
 
-tmp/omim.owl:
+tmp/omim.owl: | tmp/
 	wget https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/omim.owl -O $@
 
 $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl: tmp/omim.owl tmp/ordo.owl tmp/mondo.owl | $(BOOMER_INPUT_DIR)/
