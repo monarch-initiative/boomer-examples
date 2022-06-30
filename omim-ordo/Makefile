@@ -28,8 +28,7 @@ $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl: tmp/omim.owl tmp/ordo.owl tmp/mondo
 ## Mappings #########
 #####################
 
-ALL_MAPPINGS=		$(DATA_DIR)/mondo.sssom.tsv
-
+ALL_MAPPINGS=	$(DATA_DIR)/mondo_exactmatch_orphanet.sssom.tsv	$(DATA_DIR)/mondo_exactmatch_omimps.sssom.tsv	$(DATA_DIR)/mondo_exactmatch_omim.sssom.tsv
 
 $(BOOMER_INPUT_DIR)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml: $(ALL_MAPPINGS) $(PROJECT).symbiont.yaml | $(BOOMER_INPUT_DIR)/
 	python ../scripts/gen_boomer_input.py run \
