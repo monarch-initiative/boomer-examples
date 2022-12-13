@@ -55,3 +55,19 @@ boomer: | $(BOOMER_OUTPUT_DIR)/
 		--window-count 1 \
 		--exhaustive-search-limit 10 \
 		--runs 1 \ 
+
+#####################
+## Reports ##########
+#####################
+
+%.dot: %.json
+	og2dot.js -s ../../config/boomer-style.json $< >$@ 
+%.png: %.dot
+	test `wc -c <$<` -gt 650000 || dot $< -Tpng -Grankdir=BT >$@
+
+
+JSONS_NO_MAPPINGS=$(wildcard $(BOOMER_OUTPUT_DIR)/no_mappings/boomer_output/*.json)
+PNGS_NO_MAPPINGS=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_NO_MAPPINGS)))
+
+.PHONY: reports
+reports: $(PNGS_NO_MAPPINGS)
