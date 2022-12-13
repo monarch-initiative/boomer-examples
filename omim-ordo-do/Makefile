@@ -28,7 +28,7 @@ $(BOOMER_INPUT_DIR)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml: $(ALL_MA
 		--source-location $(DATA_DIR) \
 		--target-location $(BOOMER_INPUT_DIR)/ \
 		--config mondo-omim-ordo-do.symbiont.yaml \
-		--run-id mondo_all
+		--run-id mondo_exact
 
 $(BOOMER_INPUT_DIR)/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/combined.sssom.tsv
 	sssom ptable $< -o $@
@@ -61,12 +61,12 @@ boomer: | $(BOOMER_OUTPUT_DIR)/
 #####################
 
 %.dot: %.json
-	og2dot.js -s ../../config/boomer-style.json $< >$@ 
+	og2dot -s ../config/boomer-style.json $< >$@ 
 %.png: %.dot
 	test `wc -c <$<` -gt 650000 || dot $< -Tpng -Grankdir=BT >$@
 
 
-JSONS_NO_MAPPINGS=$(wildcard $(BOOMER_OUTPUT_DIR)/no_mappings/boomer_output/*.json)
+JSONS_NO_MAPPINGS=$(wildcard $(BOOMER_OUTPUT_DIR)/boomer_output/*.json)
 PNGS_NO_MAPPINGS=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_NO_MAPPINGS)))
 
 .PHONY: reports
