@@ -2,7 +2,8 @@ DATA_DIR = ../data
 BOOMER_INPUT_DIR = boomer_input
 BOOMER_OUTPUT_DIR = boomer_output
 
-ALL_RUNS=mondo_all 
+ALL_RUNS=mondo_all
+RUN_ID=mondo_exact
 
 $(DATA_DIR)/ $(BOOMER_INPUT_DIR)/ $(BOOMER_OUTPUT_DIR)/:
 	mkdir -p $@
@@ -28,9 +29,9 @@ $(BOOMER_INPUT_DIR)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml: $(ALL_MA
 		--source-location $(DATA_DIR) \
 		--target-location $(BOOMER_INPUT_DIR)/ \
 		--config mondo-omim-ordo-do.symbiont.yaml \
-		--run-id mondo_exact
+		--run-id $(RUN_ID)
 
-$(BOOMER_INPUT_DIR)/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/combined.sssom.tsv
+$(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.sssom.tsv
 	sssom ptable $< -o $@
 
 
@@ -39,7 +40,7 @@ $(BOOMER_INPUT_DIR)/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/combined.sssom.tsv
 #####################
 
 .PHONY: boomer-prepare-ptable
-boomer-prepare-ptable: $(BOOMER_INPUT_DIR)/combined.ptable.tsv
+boomer-prepare-ptable: $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv
 
 .PHONY: boomer-prepare-ontology
 boomer-prepare-ontology: $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl
@@ -48,25 +49,27 @@ boomer-prepare-ontology: $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl
 boomer-prepare: boomer-prepare-ontology boomer-prepare-ptable
 
 boomer: | $(BOOMER_OUTPUT_DIR)/
-	boomer --ptable $(BOOMER_INPUT_DIR)/combined.ptable.tsv \
+	boomer --ptable $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv \
 		--ontology $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl \
-		--prefixes $(BOOMER_INPUT_DIR)/prefix.yaml \
-		--output $(BOOMER_OUTPUT_DIR)/boomer_output \
+		--prefixes $(BOOMER_INPUT_DIR)/$(RUN_ID)/prefix.yaml \
+		--output $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/boomer_output \
 		--window-count 1 \
 		--exhaustive-search-limit 10 \
-		--runs 1 \ 
+		--runs 1
+	
+	find $(BOOMER_OUTPUT_DIR)/boomer_output -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
 
 #####################
 ## Reports ##########
 #####################
 
 %.dot: %.json
-	og2dot -s ../config/boomer-style.json $< >$@ 
+	og2dot -s ../config/boomer-style.json $< >$@
 %.png: %.dot
 	test `wc -c <$<` -gt 650000 || dot $< -Tpng -Grankdir=BT >$@
 
 
-JSONS_NO_MAPPINGS=$(wildcard $(BOOMER_OUTPUT_DIR)/boomer_output/*.json)
+JSONS_NO_MAPPINGS=$(wildcard $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/*.json)
 PNGS_NO_MAPPINGS=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_NO_MAPPINGS)))
 
 .PHONY: reports
