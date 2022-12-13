@@ -1,5 +1,6 @@
 import logging
-from os.path import join, dirname, realpath
+from os.path import join, dirname, realpath, exists
+from os import makedirs
 from pathlib import Path
 from sssom.parsers import parse_sssom_table
 from sssom.writers import write_table
@@ -64,8 +65,10 @@ def _load_default_info(msdf:MappingSetDataFrame)-> MappingSetDataFrame:
 @click.option("--run-id", "-i", type=str, help=f"Run id.")
 def run(config:Path, source_location:Path, target_location:Path, run_id:str):
     # Variables
-    PREFIX_YAML_FILE = join(target_location, "prefix.yaml")
-    COMBINED_SSSOM = join(target_location, "combined.sssom.tsv")
+    if not exists(join(target_location, run_id)):
+        makedirs(join(target_location, run_id))
+    PREFIX_YAML_FILE = join(target_location, run_id, "prefix.yaml")
+    COMBINED_SSSOM = join(target_location, run_id, "combined.sssom.tsv")
 
     with open(config, "rb") as c:
         config_yaml = yaml.safe_load(c)
