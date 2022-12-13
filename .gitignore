@@ -5,3 +5,4 @@ omim-ordo/tmp/*
 omim-ordo/boomer_input/symbiont-merged-all.owl
 omim-ordo-do/boomer_input/symbiont-merged-all.owl
 notebooks/output/*.json
+omim-ordo-do/boomer_output/boomer_output/*
