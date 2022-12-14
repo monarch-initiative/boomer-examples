@@ -46,18 +46,21 @@ boomer-prepare-ptable: $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv
 boomer-prepare-ontology: $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl
 
 .PHONY: boomer-prepare
-boomer-prepare: boomer-prepare-ontology boomer-prepare-ptable
+boomer-prepare: boomer-prepare-ontology boomer-prepare-ptable boomer-prepare-output-dir
 
-boomer: | $(BOOMER_OUTPUT_DIR)/
+boomer-prepare-output-dir: 
+	mkdir -p $(BOOMER_OUTPUT_DIR)/$(RUN_ID)
+
+boomer: | $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/
 	boomer --ptable $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv \
 		--ontology $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl \
 		--prefixes $(BOOMER_INPUT_DIR)/$(RUN_ID)/prefix.yaml \
-		--output $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/boomer_output \
+		--output $(BOOMER_OUTPUT_DIR)/$(RUN_ID) \
 		--window-count 1 \
 		--exhaustive-search-limit 10 \
 		--runs 1
 	
-	find $(BOOMER_OUTPUT_DIR)/boomer_output -name "*.json" -type 'f' -size -500c -delete # Hack for removing individual singleton json files.
+	find $(BOOMER_OUTPUT_DIR)/$(RUN_ID) -name "*.json" -type 'f' -size -4000c -delete # Hack for removing individual singleton json files.
 
 #####################
 ## Reports ##########
