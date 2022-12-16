@@ -3,7 +3,7 @@ BOOMER_INPUT_DIR = boomer_input
 BOOMER_OUTPUT_DIR = boomer_output
 
 ALL_RUNS=mondo_all
-RUN_ID=mondo_exact
+RUN_ID=mondo_all
 
 $(DATA_DIR)/ $(BOOMER_INPUT_DIR)/ $(BOOMER_OUTPUT_DIR)/:
 	mkdir -p $@
@@ -31,7 +31,7 @@ $(BOOMER_INPUT_DIR)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml: $(ALL_MA
 		--config mondo-omim-ordo-do.symbiont.yaml \
 		--run-id $(RUN_ID)
 
-$(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.sssom.tsv
+$(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv: $(DATA_DIR)/$(RUN_ID).sssom.tsv
 	sssom ptable $< -o $@
 
 
@@ -46,15 +46,16 @@ boomer-prepare-ptable: $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv
 boomer-prepare-ontology: $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl
 
 .PHONY: boomer-prepare
-boomer-prepare: boomer-prepare-ontology boomer-prepare-ptable boomer-prepare-output-dir
+boomer-prepare: boomer-prepare-dirs boomer-prepare-ontology boomer-prepare-ptable 
 
-boomer-prepare-output-dir: 
+boomer-prepare-dirs: 
 	mkdir -p $(BOOMER_OUTPUT_DIR)/$(RUN_ID)
+	mkdir -p $(BOOMER_INPUT_DIR)/$(RUN_ID)
 
 boomer: | $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/
 	boomer --ptable $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv \
 		--ontology $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl \
-		--prefixes $(BOOMER_INPUT_DIR)/$(RUN_ID)/prefix.yaml \
+		--prefixes $(BOOMER_INPUT_DIR)/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/$(RUN_ID) \
 		--window-count 1 \
 		--exhaustive-search-limit 10 \
