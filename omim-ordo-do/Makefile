@@ -3,7 +3,7 @@ BOOMER_INPUT_DIR = boomer_input
 BOOMER_OUTPUT_DIR = boomer_output
 
 ALL_RUNS=mondo_all
-RUN_ID=mondo_all
+RUN_ID=mondo_omim_ordo_do
 
 $(DATA_DIR)/ $(BOOMER_INPUT_DIR)/ $(BOOMER_OUTPUT_DIR)/:
 	mkdir -p $@
@@ -61,7 +61,7 @@ boomer: | $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/
 		--exhaustive-search-limit 10 \
 		--runs 1
 	
-	find $(BOOMER_OUTPUT_DIR)/$(RUN_ID) -name "*.json" -type 'f' -size -4000c -delete # Hack for removing individual singleton json files.
+#	find $(BOOMER_OUTPUT_DIR)/$(RUN_ID) -name "*.json" -type 'f' -size -4000c -delete # Hack for removing individual singleton json files.
 
 #####################
 ## Reports ##########
