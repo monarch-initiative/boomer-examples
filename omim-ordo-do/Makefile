@@ -14,6 +14,8 @@ $(DATA_DIR)/ $(BOOMER_INPUT_DIR)/ $(BOOMER_OUTPUT_DIR)/:
 
 $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl: | $(BOOMER_INPUT_DIR)/
 	wget https://www.dropbox.com/s/q82fm7oxl1m16mh/symbiont-merged-all.owl?dl=0 -O $@
+$(BOOMER_INPUT_DIR)/mondo.owl:  | $(BOOMER_INPUT_DIR)/
+	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
 
 #####################
 ## Mappings #########
@@ -54,12 +56,13 @@ boomer-prepare-dirs:
 
 boomer: | $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/
 	boomer --ptable $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv \
-		--ontology $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl \
+		--ontology $(BOOMER_INPUT_DIR)/mondo.owl \
 		--prefixes $(BOOMER_INPUT_DIR)/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/$(RUN_ID) \
-		--window-count 1 \
-		--exhaustive-search-limit 10 \
-		--runs 1
+		--window-count 10 \
+		--exhaustive-search-limit 20 \
+		--runs 5 \
+		--output-internal-axioms true
 	
 #	find $(BOOMER_OUTPUT_DIR)/$(RUN_ID) -name "*.json" -type 'f' -size -4000c -delete # Hack for removing individual singleton json files.
 
