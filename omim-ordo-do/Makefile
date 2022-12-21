@@ -64,7 +64,7 @@ boomer: | $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/
 		--runs 5 \
 		--output-internal-axioms true
 	
-#	find $(BOOMER_OUTPUT_DIR)/$(RUN_ID) -name "*.json" -type 'f' -size -4000c -delete # Hack for removing individual singleton json files.
+	find $(BOOMER_OUTPUT_DIR)/$(RUN_ID) -name "*.json" -type 'f' -size -2000c -delete # Hack for removing individual singleton json files.
 
 #####################
 ## Reports ##########
