@@ -91,8 +91,8 @@ $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/$(RUN_ID).json: $(BOOMER_OUTPUT_DIR)/$
 $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/boomer.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/$(RUN_ID).json
 	sssom parse $< -I obographs-json -m $(BOOMER_INPUT_DIR)/$(RUN_ID)/metadata.yaml -o $@
 
-$(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/uncommon.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/boomer.sssom.tsv
+$(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/diff.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/boomer.sssom.tsv
 	sssom diff $(DATA_DIR)/$(RUN_ID).sssom.tsv $< --output $@
 
 .PHONY: uncommon_mappings
-uncommon_mappings: $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/uncommon.sssom.tsv
+uncommon_mappings: $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/diff.sssom.tsv
