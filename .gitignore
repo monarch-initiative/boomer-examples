@@ -7,3 +7,4 @@ omim-ordo-do/boomer_input/*.owl
 notebooks/output/*.json
 omim-ordo-do/boomer_output/*/*.json
 omim-ordo-do/boomer_output/*/*.dot
+omim-ordo-do/boomer_output/mondo_omim_ordo_do/comparison/uncommon.sssom.tsv
