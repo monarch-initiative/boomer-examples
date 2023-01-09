@@ -1,0 +1,16 @@
+curie_map:
+  DOID: http://purl.obolibrary.org/obo/DOID_
+  HP: http://purl.obolibrary.org/obo/HP_
+  MONDO: http://purl.obolibrary.org/obo/MONDO_
+  OMIM: https://omim.org/entry/
+  OMIMPS: https://omim.org/phenotypicSeries/
+  Orphanet: http://www.orpha.net/ORDO/Orphanet_
+  oboInOwl: http://www.geneontology.org/formats/oboInOwl#
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  semapv: https://w3id.org/semapv/
+  skos: http://www.w3.org/2004/02/skos/core#
+  sssom: https://w3id.org/sssom/
+license: https://w3id.org/sssom/license/unspecified
+mapping_set_id: https://w3id.org/sssom/mappings/534ef529-f389-45e2-b48e-ac8fc9034628
