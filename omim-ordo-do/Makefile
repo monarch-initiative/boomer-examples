@@ -4,6 +4,7 @@ BOOMER_OUTPUT_DIR = boomer_output
 
 ALL_RUNS=mondo_all
 RUN_ID=mondo_omim_ordo_do
+COMPARISON_DIR = $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison
 
 $(DATA_DIR)/ $(BOOMER_INPUT_DIR)/ $(BOOMER_OUTPUT_DIR)/:
 	mkdir -p $@
@@ -53,7 +54,7 @@ boomer-prepare: boomer-prepare-dirs boomer-prepare-ontology boomer-prepare-ptabl
 boomer-prepare-dirs: 
 	mkdir -p $(BOOMER_OUTPUT_DIR)/$(RUN_ID)
 	mkdir -p $(BOOMER_INPUT_DIR)/$(RUN_ID)
-	mkdir -p $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison
+	mkdir -p $(COMPARISON_DIR)
 
 boomer: | $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/
 	boomer --ptable $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv \
@@ -85,14 +86,14 @@ reports: $(PNGS_NO_MAPPINGS)
 
 # Post processing
 
-$(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/$(RUN_ID).json: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).ofn
+$(COMPARISON_DIR)/$(RUN_ID).json: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).ofn
 	robot convert -i $(BOOMER_OUTPUT_DIR)/$(RUN_ID).ofn -o $@
 
-$(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/boomer.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/$(RUN_ID).json
+$(COMPARISON_DIR)/boomer.sssom.tsv: $(COMPARISON_DIR)/$(RUN_ID).json
 	sssom parse $< -I obographs-json -m $(BOOMER_INPUT_DIR)/$(RUN_ID)/metadata.yaml -o $@
 
-$(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/diff.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/boomer.sssom.tsv
+$(COMPARISON_DIR)/diff.sssom.tsv: $(COMPARISON_DIR)/boomer.sssom.tsv
 	sssom diff $(DATA_DIR)/$(RUN_ID).sssom.tsv $< --output $@
 
 .PHONY: uncommon_mappings
-uncommon_mappings: $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/diff.sssom.tsv
+uncommon_mappings: $(COMPARISON_DIR)/diff.sssom.tsv
