@@ -69,6 +69,7 @@ def run(config:Path, source_location:Path, target_location:Path, run_id:str):
         makedirs(join(target_location, run_id))
     PREFIX_YAML_FILE = join(target_location, run_id, "prefix.yaml")
     COMBINED_SSSOM = join(target_location, run_id, "combined.sssom.tsv")
+    METADATA_YAML_FILE = join(target_location, run_id,"metadata.yaml")
 
     with open(config, "rb") as c:
         config_yaml = yaml.safe_load(c)
@@ -130,10 +131,14 @@ def run(config:Path, source_location:Path, target_location:Path, run_id:str):
 
     export_msdf = reconcile_prefix_and_data(combined_msdf,config_yaml["custom_prefix_map"])
 
-    with open(PREFIX_YAML_FILE, "w+") as yml:
+    with open(PREFIX_YAML_FILE, "w+") as yml :
         yaml.dump(export_msdf.prefix_map,yml)
     with open(COMBINED_SSSOM, "w") as combo_file:
         write_table(export_msdf, combo_file)
+    with open(METADATA_YAML_FILE, "w") as metadata_file:
+        export_msdf.metadata.update({"curie_map": export_msdf.prefix_map})
+        yaml.dump(export_msdf.metadata,metadata_file)
+
 
 
 if __name__ == "__main__":
