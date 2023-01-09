@@ -29,6 +29,12 @@ config:
         runs: 1
         mappings:
           - mondo.sssom.tsv
+      - id: mondo_omim_ordo_do
+        window_count: 1
+        runs: 1
+        exhaustive_search_limit: 10
+        mappings:
+          - mondo_omim_ordo_do.sssom.tsv
       - id: mondo_all
         window_count: 1
         runs: 1
@@ -43,6 +49,8 @@ mapping_registry:
   - local_name: mondo.sssom.tsv
     registry_confidence: 0.99
   - local_name: mondo_all.sssom.tsv
+    registry_confidence: 0.80
+  - local_name: mondo_omim_ordo_do.sssom.tsv
     registry_confidence: 0.80
 custom_prefix_map:
   prefix_synonyms:

@@ -53,6 +53,7 @@ boomer-prepare: boomer-prepare-dirs boomer-prepare-ontology boomer-prepare-ptabl
 boomer-prepare-dirs: 
 	mkdir -p $(BOOMER_OUTPUT_DIR)/$(RUN_ID)
 	mkdir -p $(BOOMER_INPUT_DIR)/$(RUN_ID)
+	mkdir -p $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison
 
 boomer: | $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/
 	boomer --ptable $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv \
@@ -81,3 +82,17 @@ PNGS_NO_MAPPINGS=$(patsubst %.json, %.png, $(filter-out singletons, $(JSONS_NO_M
 
 .PHONY: reports
 reports: $(PNGS_NO_MAPPINGS)
+
+# Post processing
+
+$(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/$(RUN_ID).json: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).ofn
+	robot convert -i $(BOOMER_OUTPUT_DIR)/$(RUN_ID).ofn -o $@
+
+$(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/boomer.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/$(RUN_ID).json
+	sssom parse $< -I obographs-json -m $(BOOMER_INPUT_DIR)/$(RUN_ID)/metadata.yaml -o $@
+
+$(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/uncommon.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/boomer.sssom.tsv
+	sssom diff $(DATA_DIR)/$(RUN_ID).sssom.tsv $< --output $@
+
+.PHONY: uncommon_mappings
+uncommon_mappings: $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison/uncommon.sssom.tsv
