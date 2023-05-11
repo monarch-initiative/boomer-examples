@@ -18,6 +18,9 @@ $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl: | $(BOOMER_INPUT_DIR)/
 $(BOOMER_INPUT_DIR)/mondo.owl:  | $(BOOMER_INPUT_DIR)/
 	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
 
+$(BOOMER_INPUT_DIR)/symbiont-merged-all.db:
+	semsql make $@
+
 #####################
 ## Mappings #########
 #####################
@@ -95,5 +98,8 @@ $(COMPARISON_DIR)/boomer.sssom.tsv: $(COMPARISON_DIR)/$(RUN_ID).json
 $(COMPARISON_DIR)/diff.sssom.tsv: $(COMPARISON_DIR)/boomer.sssom.tsv
 	sssom diff $(DATA_DIR)/$(RUN_ID).sssom.tsv $< --output $@
 
+$(COMPARISON_DIR)/oak_diff.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
+	boomerang compare $< -i $(BOOMER_INPUT_DIR)/symbiont-merged-all.db -L 0.9 --reject-non-exact --promote-xref-to-exact > $@
+
 .PHONY: uncommon_mappings
-uncommon_mappings: $(COMPARISON_DIR)/diff.sssom.tsv
+uncommon_mappings: $(COMPARISON_DIR)/diff.sssom.tsv $(COMPARISON_DIR)/oak_diff.sssom.tsv
