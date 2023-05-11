@@ -15,10 +15,11 @@ $(DATA_DIR)/ $(BOOMER_INPUT_DIR)/ $(BOOMER_OUTPUT_DIR)/:
 
 $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl: | $(BOOMER_INPUT_DIR)/
 	wget https://www.dropbox.com/s/q82fm7oxl1m16mh/symbiont-merged-all.owl?dl=0 -O $@
+	
 $(BOOMER_INPUT_DIR)/mondo.owl:  | $(BOOMER_INPUT_DIR)/
 	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
 
-$(BOOMER_INPUT_DIR)/symbiont-merged-all.db:
+$(BOOMER_INPUT_DIR)/mondo.db:
 	semsql make $@
 
 #####################
@@ -37,6 +38,10 @@ $(BOOMER_INPUT_DIR)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml: $(ALL_MA
 		--config mondo-omim-ordo-do.symbiont.yaml \
 		--run-id $(RUN_ID)
 
+$(DATA_DIR)/$(RUN_ID).sssom.tsv: $(DATA_DIR)/mondo.sssom.tsv
+	sssom filter --object_id OMIM:% --object_id OMIMPS:% --object_id Orphanet:% --object_id DOID:% $< -o $@
+	sssom parse $@ -o $@
+
 $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv: $(DATA_DIR)/$(RUN_ID).sssom.tsv
 	sssom ptable $< -o $@
 
@@ -49,7 +54,8 @@ $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv: $(DATA_DIR)/$(RUN_ID).sssom.t
 boomer-prepare-ptable: $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv
 
 .PHONY: boomer-prepare-ontology
-boomer-prepare-ontology: $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl
+boomer-prepare-ontology: $(BOOMER_INPUT_DIR)/mondo.owl
+# boomer-prepare-ontology: $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl
 
 .PHONY: boomer-prepare
 boomer-prepare: boomer-prepare-dirs boomer-prepare-ontology boomer-prepare-ptable 
@@ -101,7 +107,7 @@ $(COMPARISON_DIR)/diff.sssom.tsv: $(COMPARISON_DIR)/boomer.sssom.tsv
 # Additional flags that can be used: --reject-non-exact --promote-xref-to-exact
 # More info: https://github.com/INCATools/ontology-access-kit/blob/main/src/oaklib/utilities/mapping/boomer_utils.py#L335-L342
 $(COMPARISON_DIR)/oak_diff.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
-	boomerang compare $< -i $(BOOMER_INPUT_DIR)/symbiont-merged-all.db -L 0.9 > $@
+	boomerang compare $< -i $(BOOMER_INPUT_DIR)/mondo.db -L 0.9 > $@
 
 .PHONY: uncommon_mappings
 uncommon_mappings: $(COMPARISON_DIR)/diff.sssom.tsv $(COMPARISON_DIR)/oak_diff.sssom.tsv
