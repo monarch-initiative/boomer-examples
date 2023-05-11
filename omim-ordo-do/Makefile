@@ -19,16 +19,16 @@ $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl: | $(BOOMER_INPUT_DIR)/
 $(BOOMER_INPUT_DIR)/mondo.owl:  | $(BOOMER_INPUT_DIR)/
 	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
 
-$(BOOMER_INPUT_DIR)/mondo.db:
+$(BOOMER_INPUT_DIR)/mondo.db: $(BOOMER_INPUT_DIR)/mondo.owl
 	semsql make $@
 
 #####################
 ## Mappings #########
 #####################
 
-ALL_MAPPINGS=		$(DATA_DIR)/empty.sssom.tsv \
-								$(DATA_DIR)/mondo.sssom.tsv \
-								$(DATA_DIR)/mondo_all.sssom.tsv
+ALL_MAPPINGS=$(DATA_DIR)/empty.sssom.tsv \
+			$(DATA_DIR)/mondo.sssom.tsv \
+			$(DATA_DIR)/mondo_all.sssom.tsv
 
 
 $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml: $(ALL_MAPPINGS) mondo-omim-ordo-do.symbiont.yaml | $(BOOMER_INPUT_DIR)/
@@ -39,7 +39,7 @@ $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml
 		--run-id $(RUN_ID)
 
 $(DATA_DIR)/$(RUN_ID).sssom.tsv: $(DATA_DIR)/mondo.sssom.tsv
-	sssom filter --object_id OMIM:% --object_id OMIMPS:% --object_id Orphanet:% --object_id DOID:% $< -o $@
+	sssom filter --object_id OMIM:% --object_id OMIMPS:% --object_id MIMPS:% --object_id Orphanet:% --object_id DOID:% $< -o $@
 	sssom parse $@ -o $@
 
 $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.sssom.tsv
@@ -76,6 +76,10 @@ boomer: | $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/
 		--output-internal-axioms true
 	
 	find $(BOOMER_OUTPUT_DIR)/$(RUN_ID) -name "*.json" -type 'f' -size -2000c -delete # Hack for removing individual singleton json files.
+
+delete-boomer-reports:
+	find $(BOOMER_OUTPUT_DIR)/$(RUN_ID) -name "*.json" -type 'f' -delete
+	find $(BOOMER_OUTPUT_DIR)/$(RUN_ID) -name "*.png" -type 'f' -delete
 
 #####################
 ## Reports ##########
@@ -118,5 +122,16 @@ $(COMPARISON_DIR)/report.html: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
 $(COMPARISON_DIR)/report.yaml: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
 	boomerang report $< -O yaml -o $@
 
-.PHONY: reports
-reports: $(COMPARISON_DIR)/report.html $(COMPARISON_DIR)/report.yaml
+.PHONY: boomerang-reports
+boomerang-reports: $(COMPARISON_DIR)/report.html $(COMPARISON_DIR)/report.yaml
+
+
+# SEQUENCE
+# 1. make boomer_input/mondo.db -B
+# 2. make ../data/mondo_omim_ordo_do.sssom.tsv -B
+# 3. make boomer_input/mondo_omim_ordo_do/combined.ptable.tsv -B
+# 4. make delete-boomer-reports
+# 5. make boomer -B
+# 6. make reports -B
+# 7. make uncommon_mappings -B
+# 8. make boomerang-reports -B

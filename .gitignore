@@ -12,3 +12,4 @@ omim-ordo-do/boomer_input/symbiont-merged-all.db
 omim-ordo-do/.template.db
 omim-ordo-do/boomer_input/mondo.db
 omim-ordo-do/boomer_input/mondo-relation-graph.tsv.gz
+omim-ordo-do/boomer_output/mondo_omim_ordo_do/*.png
