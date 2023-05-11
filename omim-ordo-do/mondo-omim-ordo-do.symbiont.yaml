@@ -5,13 +5,13 @@ ontologies:
     prefix: MONDO
   - id: omim
     prefix: OMIM
-    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/omim.owl
+    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2023-04-05/omim.owl
   - id: doid
     prefix: DOID
-    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/doid.owl
+    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2023-04-05/doid.owl
   - id: ordo
     prefix: Orphanet
-    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/ordo.owl
+    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2023-04-05/ordo.owl
 config:
   symbiont_config: ../mondo-omim-ordo-do.symbiont.yaml
   boomer_style: ../../config/boomer-style.json
