@@ -106,11 +106,11 @@ $(COMPARISON_DIR)/diff.sssom.tsv: $(COMPARISON_DIR)/boomer.sssom.tsv
 
 # Additional flags that can be used: --reject-non-exact --promote-xref-to-exact
 # More info: https://github.com/INCATools/ontology-access-kit/blob/main/src/oaklib/utilities/mapping/boomer_utils.py#L335-L342
-$(COMPARISON_DIR)/oak_diff.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
+$(COMPARISON_DIR)/boomerang.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
 	boomerang compare $< -i $(BOOMER_INPUT_DIR)/mondo.db -L 0.9 > $@
 
 .PHONY: uncommon_mappings
-uncommon_mappings: $(COMPARISON_DIR)/diff.sssom.tsv $(COMPARISON_DIR)/oak_diff.sssom.tsv
+uncommon_mappings: $(COMPARISON_DIR)/diff.sssom.tsv $(COMPARISON_DIR)/boomerang.sssom.tsv
 
 $(COMPARISON_DIR)/report.html: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
 	boomerang report $< -O html -o $@
