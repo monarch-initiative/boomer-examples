@@ -31,7 +31,7 @@ ALL_MAPPINGS=		$(DATA_DIR)/empty.sssom.tsv \
 								$(DATA_DIR)/mondo_all.sssom.tsv
 
 
-$(BOOMER_INPUT_DIR)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml: $(ALL_MAPPINGS) mondo-omim-ordo-do.symbiont.yaml | $(BOOMER_INPUT_DIR)/
+$(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml: $(ALL_MAPPINGS) mondo-omim-ordo-do.symbiont.yaml | $(BOOMER_INPUT_DIR)/
 	python ../scripts/gen_boomer_input.py run \
 		--source-location $(DATA_DIR) \
 		--target-location $(BOOMER_INPUT_DIR)/ \
@@ -42,7 +42,7 @@ $(DATA_DIR)/$(RUN_ID).sssom.tsv: $(DATA_DIR)/mondo.sssom.tsv
 	sssom filter --object_id OMIM:% --object_id OMIMPS:% --object_id Orphanet:% --object_id DOID:% $< -o $@
 	sssom parse $@ -o $@
 
-$(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv: $(DATA_DIR)/$(RUN_ID).sssom.tsv
+$(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.sssom.tsv
 	sssom ptable $< -o $@
 
 
