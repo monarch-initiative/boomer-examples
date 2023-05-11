@@ -105,3 +105,12 @@ $(COMPARISON_DIR)/oak_diff.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
 
 .PHONY: uncommon_mappings
 uncommon_mappings: $(COMPARISON_DIR)/diff.sssom.tsv $(COMPARISON_DIR)/oak_diff.sssom.tsv
+
+$(COMPARISON_DIR)/report.html: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
+	boomerang report $< -O html -o $@
+
+$(COMPARISON_DIR)/report.yaml: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
+	boomerang report $< -O yaml -o $@
+
+.PHONY: reports
+reports: $(COMPARISON_DIR)/report.html $(COMPARISON_DIR)/report.yaml
