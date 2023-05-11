@@ -2,6 +2,7 @@ curie_map:
   DOID: http://purl.obolibrary.org/obo/DOID_
   MONDO: http://purl.obolibrary.org/obo/MONDO_
   OMIM: https://omim.org/entry/
+  MIMPS: https://omim.org/phenotypicSeries/
   OMIMPS: https://omim.org/phenotypicSeries/PS
   Orphanet: http://www.orpha.net/ORDO/Orphanet_
   owl: http://www.w3.org/2002/07/owl#
