@@ -9916,6 +9916,7 @@ NEW	None	1.0	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0005701	chlamy
 NEW	None	1.0	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0006295	malignant urinary system neoplasm	http://purl.obolibrary.org/obo/DOID_3996	DOID:3996
 NEW	None	1.0	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0012842	melanoma, cutaneous malignant, susceptibility to, 7	https://omim.org/entry/612263	OMIM:612263
 NEW	None	1.0	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0007628	foveal hypoplasia 1	https://omim.org/entry/136520	OMIM:136520
+NEW	None	1.0	skos:narrowMatch	http://purl.obolibrary.org/obo/MONDO_0043510	brain injury	http://www.orpha.net/ORDO/Orphanet_90056	Orphanet:90056
 NEW	None	1.0	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0009059	cysteine Peptiduria	https://omim.org/entry/219550	OMIM:219550
 NEW	None	1.0	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0009088	deafness, neural, with atypical atopic dermatitis	https://omim.org/entry/221700	OMIM:221700
 NEW	None	1.0	skos:exactMatch	http://purl.obolibrary.org/obo/MONDO_0003865	acral lentiginous melanoma	http://purl.obolibrary.org/obo/DOID_6367	DOID:6367
