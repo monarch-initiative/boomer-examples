@@ -98,8 +98,10 @@ $(COMPARISON_DIR)/boomer.sssom.tsv: $(COMPARISON_DIR)/$(RUN_ID).json
 $(COMPARISON_DIR)/diff.sssom.tsv: $(COMPARISON_DIR)/boomer.sssom.tsv
 	sssom diff $(DATA_DIR)/$(RUN_ID).sssom.tsv $< --output $@
 
+# Additional flags that can be used: --reject-non-exact --promote-xref-to-exact
+# More info: https://github.com/INCATools/ontology-access-kit/blob/main/src/oaklib/utilities/mapping/boomer_utils.py#L335-L342
 $(COMPARISON_DIR)/oak_diff.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
-	boomerang compare $< -i $(BOOMER_INPUT_DIR)/symbiont-merged-all.db -L 0.9 --reject-non-exact --promote-xref-to-exact > $@
+	boomerang compare $< -i $(BOOMER_INPUT_DIR)/symbiont-merged-all.db -L 0.9 > $@
 
 .PHONY: uncommon_mappings
 uncommon_mappings: $(COMPARISON_DIR)/diff.sssom.tsv $(COMPARISON_DIR)/oak_diff.sssom.tsv
