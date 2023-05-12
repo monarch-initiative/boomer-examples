@@ -125,6 +125,9 @@ $(COMPARISON_DIR)/report.yaml: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
 .PHONY: boomerang-reports
 boomerang-reports: $(COMPARISON_DIR)/report.html $(COMPARISON_DIR)/report.yaml
 
+get-large-cliques:
+	python ../scripts/get_cliques.py from-reports --run-id $(RUN_ID) -t 20 -r $(COMPARISON_DIR)/report.yaml
+
 
 # SEQUENCE
 # 1. make boomer_input/mondo.db -B
@@ -135,3 +138,4 @@ boomerang-reports: $(COMPARISON_DIR)/report.html $(COMPARISON_DIR)/report.yaml
 # 6. make reports -B
 # 7. make uncommon_mappings -B
 # 8. make boomerang-reports -B
+# 9. make get-large-cliques -B
