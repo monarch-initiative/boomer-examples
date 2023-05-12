@@ -45,7 +45,7 @@ def from_reports(run_id: str, top_cliques: int, report_yaml: str):
             markdown_content.append(json_data)
         markdown_content.append("```")
         # Add the image
-        markdown_content.append(f"![Alt text](../{id}.png)")
+        markdown_content.append(f"![Clique image](../{id}.png)")
 
         # Join the Markdown content list into a single string
     markdown_output = "\n".join(markdown_content)

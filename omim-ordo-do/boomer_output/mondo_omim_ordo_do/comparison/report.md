@@ -145,7 +145,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/b01a88a12419ffb1ef18dfc75cce6be4493b5525e9b69a9896ee136788187832.png)
+![Clique image](../b01a88a12419ffb1ef18dfc75cce6be4493b5525e9b69a9896ee136788187832.png)
 ```json
 {
   "graphs" : [
@@ -276,7 +276,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/a5a47f248ac0489def55ffec3764920a41004fa4020d9508557d27241944981f.png)
+![Clique image](../a5a47f248ac0489def55ffec3764920a41004fa4020d9508557d27241944981f.png)
 ```json
 {
   "graphs" : [
@@ -390,7 +390,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/9cec2a488f339e9644ae80b87d5f1e797610165dfbfe40105da59c09dcefb905.png)
+![Clique image](../9cec2a488f339e9644ae80b87d5f1e797610165dfbfe40105da59c09dcefb905.png)
 ```json
 {
   "graphs" : [
@@ -503,7 +503,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/e3432944e26496bc695c65f4566e43754c026ee69a05848728c5d9d89cae6f94.png)
+![Clique image](../e3432944e26496bc695c65f4566e43754c026ee69a05848728c5d9d89cae6f94.png)
 ```json
 {
   "graphs" : [
@@ -617,7 +617,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/b30c8f783cc63c1ff5943208458f7e8c21e33bfee2376a65bacec95901ae0f5c.png)
+![Clique image](../b30c8f783cc63c1ff5943208458f7e8c21e33bfee2376a65bacec95901ae0f5c.png)
 ```json
 {
   "graphs" : [
@@ -731,7 +731,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/83c1c69919f5a9247b3ac19ae7de5d412d19cba344c5d3e260abe0e0a4fa49a0.png)
+![Clique image](../83c1c69919f5a9247b3ac19ae7de5d412d19cba344c5d3e260abe0e0a4fa49a0.png)
 ```json
 {
   "graphs" : [
@@ -845,7 +845,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/4fdd8d150078eccb5af9118d06275f6baeaf0ea06933a01016d89ade7f2b0a13.png)
+![Clique image](../4fdd8d150078eccb5af9118d06275f6baeaf0ea06933a01016d89ade7f2b0a13.png)
 ```json
 {
   "graphs" : [
@@ -959,7 +959,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/d6d4712b498f7a0afbcb527eb1c1aafdf0246b104eaf129c70995b9a47167339.png)
+![Clique image](../d6d4712b498f7a0afbcb527eb1c1aafdf0246b104eaf129c70995b9a47167339.png)
 ```json
 {
   "graphs" : [
@@ -1073,7 +1073,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/769d1b4926ec960023be912931f7b4312a0f4fa3dca118b5c676e5fd57884b14.png)
+![Clique image](../769d1b4926ec960023be912931f7b4312a0f4fa3dca118b5c676e5fd57884b14.png)
 ```json
 {
   "graphs" : [
@@ -1170,7 +1170,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/3c8a8255f23ad3473efd502a52809aa1b89b93cd7f2d4b474d15b1360924e843.png)
+![Clique image](../3c8a8255f23ad3473efd502a52809aa1b89b93cd7f2d4b474d15b1360924e843.png)
 ```json
 {
   "graphs" : [
@@ -1267,7 +1267,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/3af4d79454c45a1ef2fbb912ca80f3977e00fd8c2279b02ca7449ded8c24285c.png)
+![Clique image](../3af4d79454c45a1ef2fbb912ca80f3977e00fd8c2279b02ca7449ded8c24285c.png)
 ```json
 {
   "graphs" : [
@@ -1364,7 +1364,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/4a8693e491e1af9761f56480fc2a243395cd8e9ed252bc06f3a3132b41a7d41d.png)
+![Clique image](../4a8693e491e1af9761f56480fc2a243395cd8e9ed252bc06f3a3132b41a7d41d.png)
 ```json
 {
   "graphs" : [
@@ -1462,7 +1462,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/5eb4df77ad3e299f28024dd1c793b87817c62d4a5d26fdde145e276daf995f9e.png)
+![Clique image](../5eb4df77ad3e299f28024dd1c793b87817c62d4a5d26fdde145e276daf995f9e.png)
 ```json
 {
   "graphs" : [
@@ -1559,7 +1559,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/96a2706636cddf9e29519e50c87acfc0dbae922cf0faf635235269f705604af1.png)
+![Clique image](../96a2706636cddf9e29519e50c87acfc0dbae922cf0faf635235269f705604af1.png)
 ```json
 {
   "graphs" : [
@@ -1656,7 +1656,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/8b26d012b04535e24b04256c8f3c46e15b5a8b82d2e3f5d9b315c9df82016a4e.png)
+![Clique image](../8b26d012b04535e24b04256c8f3c46e15b5a8b82d2e3f5d9b315c9df82016a4e.png)
 ```json
 {
   "graphs" : [
@@ -1753,7 +1753,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/075f9bcfd4b03da8fe57d2fc0b8021874bdde87463d8c895b38304f4791e39c5.png)
+![Clique image](../075f9bcfd4b03da8fe57d2fc0b8021874bdde87463d8c895b38304f4791e39c5.png)
 ```json
 {
   "graphs" : [
@@ -1850,7 +1850,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/4fdaf160153d23930f4aaaa12f82d38e17b866bb090d5eded6bad854b6c9882f.png)
+![Clique image](../4fdaf160153d23930f4aaaa12f82d38e17b866bb090d5eded6bad854b6c9882f.png)
 ```json
 {
   "graphs" : [
@@ -1947,7 +1947,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/2ace3e519a0fc771e79e8ad2bf2a03c08c16fc29c8c18253be2714b32a35f29f.png)
+![Clique image](../2ace3e519a0fc771e79e8ad2bf2a03c08c16fc29c8c18253be2714b32a35f29f.png)
 ```json
 {
   "graphs" : [
@@ -2044,7 +2044,7 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/b3ef31d2654b330b4734bbdfabf89cdbb56a0ef4940a3b20180d08eceeab4022.png)
+![Clique image](../b3ef31d2654b330b4734bbdfabf89cdbb56a0ef4940a3b20180d08eceeab4022.png)
 ```json
 {
   "graphs" : [
@@ -2141,4 +2141,4 @@
   ]
 }
 ```
-![Alt text](boomer_output/mondo_omim_ordo_do/b1270b26329289c70879bc6681c68045ec849c9724f4e9decf0a2d9bbac36e6b.png)
+![Clique image](../b1270b26329289c70879bc6681c68045ec849c9724f4e9decf0a2d9bbac36e6b.png)
