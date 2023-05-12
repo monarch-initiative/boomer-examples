@@ -14,28 +14,30 @@ import click
 def cli():
     pass
 
-def _get_defaults_from_registry()-> dict:
-    REGISTRY_YAML = dirname(dirname(realpath(__file__)))+"/registry.yaml"
+
+def _get_defaults_from_registry() -> dict:
+    REGISTRY_YAML = dirname(dirname(realpath(__file__))) + "/registry.yaml"
     with open(REGISTRY_YAML, "r") as r:
         all_defaults = yaml.safe_load(r)
     return all_defaults["mapping_set_references"]
 
-def _get_matching_dict(param:str, val:str)->dict:
-    default_map_refs = _get_defaults_from_registry()
-    map_ref = [
-        item for item in default_map_refs if item[param] == val
-    ]
 
-    if len(map_ref )== 1:
+def _get_matching_dict(param: str, val: str) -> dict:
+    default_map_refs = _get_defaults_from_registry()
+    map_ref = [item for item in default_map_refs if item[param] == val]
+
+    if len(map_ref) == 1:
         return map_ref[0]
     elif len(map_ref) > 1:
-        logging.warning(f"registry.yaml file has multiple configurations for {param}: {val}.")
+        logging.warning(
+            f"registry.yaml file has multiple configurations for {param}: {val}."
+        )
         return map_ref[0]
     else:
         logging.warning(f"No default value for {param} in the registry.yaml file.")
 
 
-def _load_default_info(msdf:MappingSetDataFrame)-> MappingSetDataFrame:
+def _load_default_info(msdf: MappingSetDataFrame) -> MappingSetDataFrame:
     """
     Load MappingSetDataFrame object with default values from global config (registry.yaml).
 
@@ -43,33 +45,51 @@ def _load_default_info(msdf:MappingSetDataFrame)-> MappingSetDataFrame:
     :return: Output MappingSetDataFrame with default values.
     """
     if msdf.metadata["mapping_set_id"]:
-        relevant_map = _get_matching_dict("mapping_set_id", msdf.metadata["mapping_set_id"])
+        relevant_map = _get_matching_dict(
+            "mapping_set_id", msdf.metadata["mapping_set_id"]
+        )
         if relevant_map:
             if "mirror_from" in relevant_map.keys():
-                relevant_map.pop('mirror_from')
+                relevant_map.pop("mirror_from")
             msdf.df["confidence"] = relevant_map["registry_confidence"]
         else:
             map_id = msdf.metadata["mapping_set_id"]
-            logging.warning(f"mapping_set_id :{map_id} \
-                does not have default values")
+            logging.warning(
+                f"mapping_set_id :{map_id} \
+                does not have default values"
+            )
     else:
-        logging.warning(f"There seems to be no default values\
-             for mapping_set_id provided.")
+        logging.warning(
+            f"There seems to be no default values\
+             for mapping_set_id provided."
+        )
     return msdf
 
 
 @cli.command()
-@click.option("--config", "-c", type=click.Path(exists=True), help=f"Path to the config folder.")
-@click.option("--source-location", "-s", type=click.Path() , help=f"Path to source of individual sssom.tsv files.")
-@click.option("--target-location", "-t", type=click.Path(), help=f"Path to save the combined.sssom.tsv and prefix.yaml files.")
+@click.option(
+    "--config", "-c", type=click.Path(exists=True), help=f"Path to the config folder."
+)
+@click.option(
+    "--source-location",
+    "-s",
+    type=click.Path(),
+    help=f"Path to source of individual sssom.tsv files.",
+)
+@click.option(
+    "--target-location",
+    "-t",
+    type=click.Path(),
+    help=f"Path to save the combined.sssom.tsv and prefix.yaml files.",
+)
 @click.option("--run-id", "-i", type=str, help=f"Run id.")
-def run(config:Path, source_location:Path, target_location:Path, run_id:str):
+def run(config: Path, source_location: Path, target_location: Path, run_id: str):
     # Variables
     if not exists(join(target_location, run_id)):
         makedirs(join(target_location, run_id))
     PREFIX_YAML_FILE = join(target_location, run_id, "prefix.yaml")
     COMBINED_SSSOM = join(target_location, run_id, "combined.sssom.tsv")
-    METADATA_YAML_FILE = join(target_location, run_id,"metadata.yaml")
+    METADATA_YAML_FILE = join(target_location, run_id, "metadata.yaml")
 
     with open(config, "rb") as c:
         config_yaml = yaml.safe_load(c)
@@ -77,11 +97,12 @@ def run(config:Path, source_location:Path, target_location:Path, run_id:str):
     id = run_id
 
     concerned_run_list = [
-                        info for info in config_yaml["config"]["boomer_config"]["runs"]
-                        if info["id"] == id
-                    ]
+        info
+        for info in config_yaml["config"]["boomer_config"]["runs"]
+        if info["id"] == id
+    ]
 
-    if len(concerned_run_list) == 1 :
+    if len(concerned_run_list) == 1:
         concerned_run = concerned_run_list[0]
     elif len(concerned_run_list) > 1:
         logging.warning(f"{config} file has multiple configurations for id = {id}")
@@ -98,20 +119,25 @@ def run(config:Path, source_location:Path, target_location:Path, run_id:str):
     for fn in mapping_files:
 
         mapping_ref = [
-            info for info in config_yaml["mapping_registry"]["mapping_set_references"]
+            info
+            for info in config_yaml["mapping_registry"]["mapping_set_references"]
             if info["local_name"] == fn
         ]
-        if len(mapping_ref) == 1 :
+        if len(mapping_ref) == 1:
             concerned_map = mapping_ref[0]
             confidence = concerned_map["registry_confidence"]
         elif len(mapping_ref) > 1:
-            logging.warning(f"{config} file has multiple \
-                    mapping_set_reference for local_name = {fn}")
+            logging.warning(
+                f"{config} file has multiple \
+                    mapping_set_reference for local_name = {fn}"
+            )
             concerned_map = mapping_ref[0]
             confidence = concerned_map["registry_confidence"]
         else:
-            logging.warning(f"{config} file does not have \
-                mapping_set_reference for local_name = {fn}")
+            logging.warning(
+                f"{config} file does not have \
+                mapping_set_reference for local_name = {fn}"
+            )
 
         fp = join(source_location, fn)
         print(f"Loading file:{fn} ")
@@ -119,26 +145,33 @@ def run(config:Path, source_location:Path, target_location:Path, run_id:str):
         # confidence, metadata and prefix_map from global config.
         msdf = _load_default_info(msdf)
         # confidence, metadata and prefix_map from local config.
-        msdf.df['confidence'] = confidence
-        metadata.update({k:v for k,v in msdf.metadata.items() if k not in metadata.keys()})
-        prefix_map.update({k:v for k,v in msdf.prefix_map.items() if k not in prefix_map.keys()})
+        msdf.df["confidence"] = confidence
+        metadata.update(
+            {k: v for k, v in msdf.metadata.items() if k not in metadata.keys()}
+        )
+        prefix_map.update(
+            {k: v for k, v in msdf.prefix_map.items() if k not in prefix_map.keys()}
+        )
         msdf_list.append(msdf)
         df_list.append(msdf.df)
 
     combined_df = pd.concat(df_list, axis=0, ignore_index=True)
     combined_df = combined_df.drop_duplicates()
-    combined_msdf = MappingSetDataFrame(df=combined_df, prefix_map=prefix_map, metadata=metadata)
+    combined_msdf = MappingSetDataFrame(
+        df=combined_df, prefix_map=prefix_map, metadata=metadata
+    )
 
-    export_msdf = reconcile_prefix_and_data(combined_msdf,config_yaml["custom_prefix_map"])
+    export_msdf = reconcile_prefix_and_data(
+        combined_msdf, config_yaml["custom_prefix_map"]
+    )
 
-    with open(PREFIX_YAML_FILE, "w+") as yml :
-        yaml.dump(export_msdf.prefix_map,yml)
+    with open(PREFIX_YAML_FILE, "w+") as yml:
+        yaml.dump(export_msdf.prefix_map, yml)
     with open(COMBINED_SSSOM, "w") as combo_file:
         write_table(export_msdf, combo_file)
     with open(METADATA_YAML_FILE, "w") as metadata_file:
         export_msdf.metadata.update({"curie_map": export_msdf.prefix_map})
-        yaml.dump(export_msdf.metadata,metadata_file)
-
+        yaml.dump(export_msdf.metadata, metadata_file)
 
 
 if __name__ == "__main__":
