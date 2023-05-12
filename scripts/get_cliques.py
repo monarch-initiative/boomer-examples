@@ -1,10 +1,8 @@
-import base64
 from os import listdir, stat
 from os.path import dirname, realpath, join, relpath
 import click
 import yaml
 import json
-from PIL import Image
 
 PROJECT_DIR = dirname(dirname(realpath(__file__)))
 
@@ -34,22 +32,20 @@ def from_reports(run_id: str, top_cliques: int, report_yaml: str):
     # top_cliques_reports = [x for x in reports['clusters'] if x['id'] in top_clique_ids]
     subset_report = report_yaml.replace(".yaml", ".md")
 
-    # Create an empty list to store the Markdown content
     markdown_content = []
     for id in top_clique_ids:
         json_file = join(relpath(boomer_output_dir), id+".json")
         image_path = join(relpath(boomer_output_dir), id+".png")
 
+        # Create an empty list to store the Markdown content
+        
         markdown_content.append("```json")
         with open(json_file, "r") as f:
             json_data = f.read()
             markdown_content.append(json_data)
         markdown_content.append("```")
-        # Embed the image
-        with open(image_path, "rb") as f:
-            img_data = f.read()
-            img_data_base64 = base64.b64encode(img_data).decode('utf-8')
-            markdown_content.append(f"![Click for image](data:image/jpeg;base64,{img_data_base64})")
+        # Add the image
+        markdown_content.append(f"![Alt text](file://{image_path})")
 
         # Join the Markdown content list into a single string
     markdown_output = "\n".join(markdown_content)
