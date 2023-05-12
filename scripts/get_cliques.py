@@ -30,7 +30,7 @@ def from_reports(run_id: str, top_cliques: int, report_yaml: str):
     #     reports = yaml.safe_load(y)
 
     # top_cliques_reports = [x for x in reports['clusters'] if x['id'] in top_clique_ids]
-    subset_report = report_yaml.replace(".yaml", ".md")
+    subset_report = report_yaml.replace(".yaml", "_subset.md")
 
     markdown_content = []
     for id in top_clique_ids:
