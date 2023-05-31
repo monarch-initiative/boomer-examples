@@ -5,6 +5,7 @@ BOOMER_OUTPUT_DIR = boomer_output
 ALL_RUNS=mondo_all
 RUN_ID=mondo_omim_ordo_do
 COMPARISON_DIR = $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison
+OWL_FILE = $(BOOMER_INPUT_DIR)/merged.owl
 
 $(DATA_DIR)/ $(BOOMER_INPUT_DIR)/ $(BOOMER_OUTPUT_DIR)/:
 	mkdir -p $@
@@ -38,7 +39,7 @@ $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml
 		--config mondo-omim-ordo-do.symbiont.yaml \
 		--run-id $(RUN_ID)
 
-$(DATA_DIR)/$(RUN_ID).sssom.tsv: $(DATA_DIR)/mondo.sssom.tsv
+$(DATA_DIR)/$(RUN_ID).sssom.tsv: $(DATA_DIR)/mondo_all.sssom.tsv
 	sssom filter --object_id OMIM:% --object_id OMIMPS:% --object_id MIMPS:% --object_id Orphanet:% --object_id DOID:% $< -o $@
 	sssom parse $@ -o $@
 
@@ -67,7 +68,7 @@ boomer-prepare-dirs:
 
 boomer: | $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/
 	boomer --ptable $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv \
-		--ontology $(BOOMER_INPUT_DIR)/mondo.owl \
+		--ontology $(OWL_FILE) \
 		--prefixes $(BOOMER_INPUT_DIR)/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/$(RUN_ID) \
 		--window-count 10 \
