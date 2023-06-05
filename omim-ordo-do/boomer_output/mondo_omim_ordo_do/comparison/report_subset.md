@@ -2,420 +2,22 @@
 {
   "graphs" : [
     {
-      "id" : "urn:clique:b0cf947bf4215888b13574076e89d84a21f3831ed8a695ef26331b375ccb6090",
+      "id" : "urn:clique:b01a88a12419ffb1ef18dfc75cce6be4493b5525e9b69a9896ee136788187832",
       "nodes" : [
         {
-          "id" : "MONDO:0016672",
+          "id" : "Orphanet:807",
           "type" : "CLASS",
-          "lbl" : "hereditary persistence of fetal hemoglobin-sickle cell disease syndrome"
+          "lbl" : "Sebastian syndrome"
         },
         {
-          "id" : "OMIM:142470",
+          "id" : "Orphanet:1019",
           "type" : "CLASS",
-          "lbl" : "fetal hemoglobin quantitative trait locus 2"
+          "lbl" : "Epstein syndrome"
         },
         {
-          "id" : "MONDO:0018749",
+          "id" : "Orphanet:182050",
           "type" : "CLASS",
-          "lbl" : "hereditary persistence of fetal hemoglobin-beta-thalassemia syndrome"
-        },
-        {
-          "id" : "OMIM:141749",
-          "type" : "CLASS",
-          "lbl" : "fetal hemoglobin quantitative trait locus 1"
-        },
-        {
-          "id" : "OMIM:613566",
-          "type" : "CLASS",
-          "lbl" : "fetal hemoglobin quantitative trait locus 6"
-        },
-        {
-          "id" : "MONDO:0016489",
-          "type" : "CLASS",
-          "lbl" : "delta-beta-thalassemia"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "MONDO:0016489",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:141749",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0018749",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:613566",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0018749",
-          "pred" : "siblingOf",
-          "obj" : "OMIM:142470",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0018749",
-          "pred" : "siblingOf",
-          "obj" : "OMIM:141749",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0016672",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:142470",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0016672",
-          "pred" : "siblingOf",
-          "obj" : "OMIM:141749",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0016672",
-          "pred" : "siblingOf",
-          "obj" : "OMIM:613566",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "MONDO:0016489",
-            "OMIM:141749"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "MONDO:0016672",
-            "OMIM:142470"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "OMIM:613566",
-            "MONDO:0018749"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../b0cf947bf4215888b13574076e89d84a21f3831ed8a695ef26331b375ccb6090.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:7c6bd83edf1e2ffa958cb5e207c0cc32853303ccc2bfdd9349282353002e7faf",
-      "nodes" : [
-        {
-          "id" : "MONDO:0014175",
-          "type" : "CLASS",
-          "lbl" : "mitochondrial DNA depletion syndrome 12B (cardiomyopathic type), autosomal recessive"
-        },
-        {
-          "id" : "DOID:0080130",
-          "type" : "CLASS",
-          "lbl" : "mitochondrial DNA depletion syndrome 12a"
-        },
-        {
-          "id" : "OMIM:617184",
-          "type" : "CLASS",
-          "lbl" : "mitochondrial DNA depletion syndrome 12a (cardiomyopathic type), autosomal dominant"
-        },
-        {
-          "id" : "DOID:0080335",
-          "type" : "CLASS",
-          "lbl" : "mitochondrial DNA depletion syndrome 12b"
-        },
-        {
-          "id" : "OMIM:615418",
-          "type" : "CLASS",
-          "lbl" : "mitochondrial DNA depletion syndrome 12b (cardiomyopathic type), autosomal recessive"
-        },
-        {
-          "id" : "MONDO:0014959",
-          "type" : "CLASS",
-          "lbl" : "mitochondrial DNA depletion syndrome 12A (cardiomyopathic type), autosomal dominant"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "MONDO:0014175",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:615418",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0014959",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:617184",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0080130",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0014959",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0080335",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0014175",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0014175",
-          "pred" : "siblingOf",
-          "obj" : "DOID:0080130",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "DOID:0080335",
-            "MONDO:0014175",
-            "OMIM:615418"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:0080130",
-            "MONDO:0014959",
-            "OMIM:617184"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../7c6bd83edf1e2ffa958cb5e207c0cc32853303ccc2bfdd9349282353002e7faf.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:b74f1b1c731daeaa47a4f8c18f444070092489af60117c423a08d9ac4047c2bc",
-      "nodes" : [
-        {
-          "id" : "DOID:676",
-          "type" : "CLASS",
-          "lbl" : "juvenile rheumatoid arthritis"
-        },
-        {
-          "id" : "MONDO:0011429",
-          "type" : "CLASS",
-          "lbl" : "juvenile idiopathic arthritis"
-        },
-        {
-          "id" : "MONDO:0003990",
-          "type" : "CLASS",
-          "lbl" : "malignant breast myoepithelioma"
-        },
-        {
-          "id" : "DOID:6776",
-          "type" : "CLASS",
-          "lbl" : "breast myoepithelial carcinoma"
-        },
-        {
-          "id" : "OMIM:604302",
-          "type" : "CLASS",
-          "lbl" : "rheumatoid arthritis, systemic juvenile"
-        },
-        {
-          "id" : "MONDO:0005185",
-          "type" : "CLASS",
-          "lbl" : "chronic childhood arthritis"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "MONDO:0011429",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:604302",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:676",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0005185",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0005185",
-          "pred" : "siblingOf",
-          "obj" : "DOID:6776",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0011429",
-          "pred" : "siblingOf",
-          "obj" : "DOID:676",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:6776",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0003990",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "MONDO:0005185",
-            "DOID:676"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "MONDO:0011429",
-            "OMIM:604302"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "MONDO:0003990",
-            "DOID:6776"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../b74f1b1c731daeaa47a4f8c18f444070092489af60117c423a08d9ac4047c2bc.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:72ffce55a0ae409d7042ad895f6f0e6ecdf25c0b88172436cf02c7dac20d28c7",
-      "nodes" : [
-        {
-          "id" : "OMIM:153640",
-          "type" : "CLASS"
+          "lbl" : "MYH9-related disease"
         },
         {
           "id" : "DOID:0060651",
@@ -423,51 +25,27 @@
           "lbl" : "MYH-9 related disease"
         },
         {
-          "id" : "MONDO:0015912",
-          "type" : "CLASS",
-          "lbl" : "macrothrombocytopenia and granulocyte inclusions with or without nephritis or sensorineural hearing loss"
-        },
-        {
           "id" : "OMIM:155100",
           "type" : "CLASS",
           "lbl" : "macrothrombocytopenia and granulocyte inclusions with or without nephritis or sensorineural hearing loss"
         },
         {
-          "id" : "OMIM:605249",
-          "type" : "CLASS"
+          "id" : "Orphanet:850",
+          "type" : "CLASS",
+          "lbl" : "May-Hegglin thrombocytopenia"
         },
         {
-          "id" : "OMIM:600208",
-          "type" : "CLASS"
+          "id" : "MONDO:0015912",
+          "type" : "CLASS",
+          "lbl" : "macrothrombocytopenia and granulocyte inclusions with or without nephritis or sensorineural hearing loss"
+        },
+        {
+          "id" : "Orphanet:1984",
+          "type" : "CLASS",
+          "lbl" : "Fechtner syndrome"
         }
       ],
       "edges" : [
-        {
-          "sub" : "MONDO:0015912",
-          "pred" : "siblingOf",
-          "obj" : "OMIM:153640",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0015912",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:600208",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
         {
           "sub" : "DOID:0060651",
           "pred" : "owl:equivalentClass",
@@ -483,8 +61,21 @@
         },
         {
           "sub" : "MONDO:0015912",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:807",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015912",
           "pred" : "siblingOf",
-          "obj" : "OMIM:605249",
+          "obj" : "Orphanet:182050",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -497,7 +88,46 @@
         {
           "sub" : "MONDO:0015912",
           "pred" : "siblingOf",
+          "obj" : "Orphanet:1984",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015912",
+          "pred" : "owl:equivalentClass",
           "obj" : "OMIM:155100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015912",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:1019",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0015912",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:850",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -513,7 +143,8 @@
           "nodeIds" : [
             "MONDO:0015912",
             "DOID:0060651",
-            "OMIM:600208"
+            "Orphanet:807",
+            "OMIM:155100"
           ]
         }
       ]
@@ -521,70 +152,53 @@
   ]
 }
 ```
-![Clique image](../72ffce55a0ae409d7042ad895f6f0e6ecdf25c0b88172436cf02c7dac20d28c7.png)
+![Clique image](../b01a88a12419ffb1ef18dfc75cce6be4493b5525e9b69a9896ee136788187832.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:00e9bf4197009d202c3456f652e1dc56976229620950c333c939c4f88aba6487",
+      "id" : "urn:clique:a5a47f248ac0489def55ffec3764920a41004fa4020d9508557d27241944981f",
       "nodes" : [
         {
-          "id" : "MONDO:0003540",
+          "id" : "MONDO:0009726",
           "type" : "CLASS",
-          "lbl" : "acute T cell leukemia"
+          "lbl" : "proteosome-associated autoinflammatory syndrome"
         },
         {
-          "id" : "DOID:5603",
+          "id" : "Orphanet:324977",
           "type" : "CLASS",
-          "lbl" : "T-cell acute lymphoblastic leukemia"
+          "lbl" : "Proteasome-associated autoinflammatory syndrome"
         },
         {
-          "id" : "DOID:0050523",
+          "id" : "Orphanet:325004",
           "type" : "CLASS",
-          "lbl" : "adult T-cell leukemia/lymphoma"
+          "lbl" : "CANDLE syndrome"
         },
         {
-          "id" : "MONDO:0019471",
+          "id" : "Orphanet:324999",
           "type" : "CLASS",
-          "lbl" : "adult T-cell leukemia/lymphoma"
+          "lbl" : "JMP syndrome"
         },
         {
-          "id" : "MONDO:0004963",
+          "id" : "OMIMPS:256040",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "Orphanet:2615",
           "type" : "CLASS",
-          "lbl" : "T-cell acute lymphoblastic leukemia"
+          "lbl" : "Nakajo-Nishimura syndrome"
+        },
+        {
+          "id" : "DOID:0050553",
+          "type" : "CLASS",
+          "lbl" : "JMP syndrome"
         }
       ],
       "edges" : [
         {
-          "sub" : "MONDO:0004963",
-          "pred" : "siblingOf",
-          "obj" : "DOID:0050523",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0003540",
-          "pred" : "siblingOf",
-          "obj" : "DOID:5603",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0050523",
+          "sub" : "MONDO:0009726",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0019471",
+          "obj" : "Orphanet:325004",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -595,9 +209,61 @@
           }
         },
         {
-          "sub" : "DOID:5603",
+          "sub" : "MONDO:0009726",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:2615",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009726",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:324977",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009726",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0004963",
+          "obj" : "OMIMPS:256040",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009726",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:324999",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050553",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009726",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -611,14 +277,10 @@
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "DOID:0050523",
-            "MONDO:0019471"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:5603",
-            "MONDO:0004963"
+            "MONDO:0009726",
+            "OMIMPS:256040",
+            "DOID:0050553",
+            "Orphanet:325004"
           ]
         }
       ]
@@ -626,27 +288,744 @@
   ]
 }
 ```
-![Clique image](../00e9bf4197009d202c3456f652e1dc56976229620950c333c939c4f88aba6487.png)
+![Clique image](../a5a47f248ac0489def55ffec3764920a41004fa4020d9508557d27241944981f.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:ff01de44b88489a81104aea607b21505c9b0c561a48f723a20e87b3623bea769",
+      "id" : "urn:clique:b30c8f783cc63c1ff5943208458f7e8c21e33bfee2376a65bacec95901ae0f5c",
       "nodes" : [
+        {
+          "id" : "MONDO:0008490",
+          "type" : "CLASS",
+          "lbl" : "otospondylomegaepiphyseal dysplasia, autosomal dominant"
+        },
+        {
+          "id" : "Orphanet:166100",
+          "type" : "CLASS",
+          "lbl" : "Autosomal dominant otospondylomegaepiphyseal dysplasia"
+        },
+        {
+          "id" : "Orphanet:3450",
+          "type" : "CLASS",
+          "lbl" : "Weissenbacher-Zweymuller syndrome"
+        },
+        {
+          "id" : "DOID:0080677",
+          "type" : "CLASS",
+          "lbl" : "otospondylomegaepiphyseal dysplasia, autosomal dominant"
+        },
+        {
+          "id" : "OMIM:184840",
+          "type" : "CLASS",
+          "lbl" : "otospondylomegaepiphyseal dysplasia, autosomal dominant"
+        },
+        {
+          "id" : "DOID:4258",
+          "type" : "CLASS",
+          "lbl" : "Weissenbacher-Zweymuller syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0008490",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:3450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008490",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:166100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008490",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0080677",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0008490",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:184840",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:4258",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0008490",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0008490",
+            "Orphanet:166100",
+            "OMIM:184840",
+            "DOID:4258"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../b30c8f783cc63c1ff5943208458f7e8c21e33bfee2376a65bacec95901ae0f5c.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:9cec2a488f339e9644ae80b87d5f1e797610165dfbfe40105da59c09dcefb905",
+      "nodes" : [
+        {
+          "id" : "DOID:0080400",
+          "type" : "CLASS",
+          "lbl" : "orofacial cleft 7"
+        },
+        {
+          "id" : "Orphanet:3253",
+          "type" : "CLASS",
+          "lbl" : "Cleft lip/palate-ectodermal dysplasia syndrome"
+        },
+        {
+          "id" : "Orphanet:320317",
+          "type" : "CLASS",
+          "lbl" : "OBSOLETE: Cleft lip/palate-ectodermal dysplasia syndrome"
+        },
+        {
+          "id" : "MONDO:0009151",
+          "type" : "CLASS",
+          "lbl" : "cleft lip/palate-ectodermal dysplasia syndrome"
+        },
+        {
+          "id" : "DOID:0060773",
+          "type" : "CLASS",
+          "lbl" : "cleft lip-palate-ectodermal dysplasia syndrome"
+        },
+        {
+          "id" : "OMIM:225060",
+          "type" : "CLASS",
+          "lbl" : "cleft lip/palate-ectodermal dysplasia syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009151",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0080400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009151",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:320317",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060773",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009151",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009151",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:3253",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009151",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:225060",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:225060",
+            "MONDO:0009151",
+            "DOID:0060773",
+            "Orphanet:320317"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../9cec2a488f339e9644ae80b87d5f1e797610165dfbfe40105da59c09dcefb905.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:83c1c69919f5a9247b3ac19ae7de5d412d19cba344c5d3e260abe0e0a4fa49a0",
+      "nodes" : [
+        {
+          "id" : "OMIM:613091",
+          "type" : "CLASS",
+          "lbl" : "short-rib thoracic dysplasia 3 with or without polydactyly"
+        },
+        {
+          "id" : "Orphanet:93271",
+          "type" : "CLASS",
+          "lbl" : "Short rib-polydactyly syndrome, Verma-Naumoff type"
+        },
+        {
+          "id" : "DOID:0110087",
+          "type" : "CLASS",
+          "lbl" : "asphyxiating thoracic dystrophy 3"
+        },
+        {
+          "id" : "Orphanet:93270",
+          "type" : "CLASS",
+          "lbl" : "Short rib-polydactyly syndrome, Saldino-Noonan type"
+        },
+        {
+          "id" : "DOID:0050549",
+          "type" : "CLASS",
+          "lbl" : "Saldino-Noonan syndrome"
+        },
+        {
+          "id" : "MONDO:0013127",
+          "type" : "CLASS",
+          "lbl" : "asphyxiating thoracic dystrophy 3"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013127",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93271",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013127",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0110087",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050549",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013127",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013127",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613091",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013127",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:93270",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013127",
+            "Orphanet:93271",
+            "DOID:0050549",
+            "OMIM:613091"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../83c1c69919f5a9247b3ac19ae7de5d412d19cba344c5d3e260abe0e0a4fa49a0.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:e3432944e26496bc695c65f4566e43754c026ee69a05848728c5d9d89cae6f94",
+      "nodes" : [
+        {
+          "id" : "Orphanet:73220",
+          "type" : "CLASS",
+          "lbl" : "X-linked intellectual disability-hypotonic face syndrome"
+        },
+        {
+          "id" : "Orphanet:93973",
+          "type" : "CLASS",
+          "lbl" : "Carpenter-Waziri syndrome"
+        },
+        {
+          "id" : "Orphanet:93974",
+          "type" : "CLASS",
+          "lbl" : "Smith-Fineman-Myers syndrome"
+        },
+        {
+          "id" : "OMIM:309580",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability-hypotonic facies syndrome, x-linked, 1"
+        },
+        {
+          "id" : "Orphanet:93971",
+          "type" : "CLASS",
+          "lbl" : "Chudley-Lowry-Hoar syndrome"
+        },
+        {
+          "id" : "MONDO:0010663",
+          "type" : "CLASS",
+          "lbl" : "intellectual disability-hypotonic facies syndrome, X-linked, 1"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010663",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:93974",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010663",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:73220",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010663",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:309580",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010663",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:93971",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010663",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:93973",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010663",
+            "OMIM:309580",
+            "Orphanet:93973"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../e3432944e26496bc695c65f4566e43754c026ee69a05848728c5d9d89cae6f94.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:d6d4712b498f7a0afbcb527eb1c1aafdf0246b104eaf129c70995b9a47167339",
+      "nodes" : [
+        {
+          "id" : "Orphanet:266",
+          "type" : "CLASS",
+          "lbl" : "Autosomal dominant limb-girdle muscular dystrophy type 1A"
+        },
+        {
+          "id" : "DOID:0080094",
+          "type" : "CLASS",
+          "lbl" : "myofibrillar myopathy 3"
+        },
+        {
+          "id" : "OMIM:609200",
+          "type" : "CLASS",
+          "lbl" : "myopathy, myofibrillar, 3"
+        },
+        {
+          "id" : "DOID:0110300",
+          "type" : "CLASS",
+          "lbl" : "obsolete autosomal dominant limb-girdle muscular dystrophy type 1A"
+        },
+        {
+          "id" : "MONDO:0012215",
+          "type" : "CLASS",
+          "lbl" : "myofibrillar myopathy 3"
+        },
+        {
+          "id" : "Orphanet:98911",
+          "type" : "CLASS",
+          "lbl" : "Distal myotilinopathy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0012215",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0110300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012215",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:98911",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012215",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:266",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012215",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080094",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012215",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080094",
+            "MONDO:0012215",
+            "Orphanet:98911",
+            "OMIM:609200"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../d6d4712b498f7a0afbcb527eb1c1aafdf0246b104eaf129c70995b9a47167339.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:4fdd8d150078eccb5af9118d06275f6baeaf0ea06933a01016d89ade7f2b0a13",
+      "nodes" : [
+        {
+          "id" : "OMIM:614204",
+          "type" : "CLASS",
+          "lbl" : "psoriasis 14, pustular"
+        },
+        {
+          "id" : "Orphanet:247353",
+          "type" : "CLASS",
+          "lbl" : "Generalized pustular psoriasis"
+        },
+        {
+          "id" : "MONDO:0013626",
+          "type" : "CLASS",
+          "lbl" : "psoriasis 14, pustular"
+        },
+        {
+          "id" : "DOID:0080474",
+          "type" : "CLASS",
+          "lbl" : "pustular psoriasis 14"
+        },
+        {
+          "id" : "Orphanet:404546",
+          "type" : "CLASS",
+          "lbl" : "DITRA"
+        },
+        {
+          "id" : "Orphanet:163931",
+          "type" : "CLASS",
+          "lbl" : "Acrodermatitis continua of Hallopeau"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0013626",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:163931",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013626",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:247353",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013626",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:614204",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0080474",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0013626",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013626",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:404546",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0013626",
+            "Orphanet:163931",
+            "DOID:0080474",
+            "OMIM:614204"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../4fdd8d150078eccb5af9118d06275f6baeaf0ea06933a01016d89ade7f2b0a13.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:769d1b4926ec960023be912931f7b4312a0f4fa3dca118b5c676e5fd57884b14",
+      "nodes" : [
+        {
+          "id" : "Orphanet:68356",
+          "type" : "CLASS",
+          "lbl" : "Leukodystrophy"
+        },
         {
           "id" : "DOID:10579",
           "type" : "CLASS",
           "lbl" : "leukodystrophy"
         },
         {
-          "id" : "MONDO:0000562",
-          "type" : "CLASS",
-          "lbl" : "obsolete hypomyelinating leukoencephalopathy"
-        },
-        {
           "id" : "MONDO:0019046",
           "type" : "CLASS",
           "lbl" : "leukodystrophy"
+        },
+        {
+          "id" : "OMIMPS:312080",
+          "type" : "CLASS"
         },
         {
           "id" : "DOID:0050987",
@@ -661,9 +1040,48 @@
       ],
       "edges" : [
         {
-          "sub" : "DOID:10579",
+          "sub" : "MONDO:0019046",
+          "pred" : "siblingOf",
+          "obj" : "DOID:10579",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060786",
           "pred" : "owl:equivalentClass",
           "obj" : "MONDO:0019046",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:68356",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0019046",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIMPS:312080",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -685,11 +1103,60 @@
               }
             ]
           }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0019046",
+            "Orphanet:68356",
+            "DOID:0060786",
+            "OMIMPS:312080"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../769d1b4926ec960023be912931f7b4312a0f4fa3dca118b5c676e5fd57884b14.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:cc7c825915784d9904ae9f9089b538a18c766d9fb09ef6d2328d71fcf2e13d9a",
+      "nodes" : [
+        {
+          "id" : "DOID:0060800",
+          "type" : "CLASS",
+          "lbl" : "syndromic X-linked intellectual disability 5"
         },
         {
-          "sub" : "DOID:0050987",
+          "id" : "Orphanet:85329",
+          "type" : "CLASS",
+          "lbl" : "X-linked intellectual disability-hypotonia-facial dysmorphism-aggressive behavior syndrome"
+        },
+        {
+          "id" : "OMIM:304340",
+          "type" : "CLASS",
+          "lbl" : "pettigrew syndrome"
+        },
+        {
+          "id" : "MONDO:0010574",
+          "type" : "CLASS",
+          "lbl" : "syndromic X-linked intellectual disability 5"
+        },
+        {
+          "id" : "Orphanet:1568",
+          "type" : "CLASS",
+          "lbl" : "X-linked intellectual disability-Dandy-Walker malformation-basal ganglia disease-seizures syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0010574",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0000562",
+          "obj" : "Orphanet:85329",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -700,9 +1167,22 @@
           }
         },
         {
-          "sub" : "MONDO:0019046",
+          "sub" : "MONDO:0010574",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:304340",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010574",
           "pred" : "siblingOf",
-          "obj" : "DOID:0060786",
+          "obj" : "Orphanet:1568",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -711,19 +1191,28 @@
               }
             ]
           }
+        },
+        {
+          "sub" : "DOID:0060800",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010574",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
         }
       ],
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "DOID:10579",
-            "MONDO:0019046"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:0050987",
-            "MONDO:0000562"
+            "MONDO:0010574",
+            "Orphanet:85329",
+            "OMIM:304340",
+            "DOID:0060800"
           ]
         }
       ]
@@ -731,17 +1220,114 @@
   ]
 }
 ```
-![Clique image](../ff01de44b88489a81104aea607b21505c9b0c561a48f723a20e87b3623bea769.png)
+![Clique image](../cc7c825915784d9904ae9f9089b538a18c766d9fb09ef6d2328d71fcf2e13d9a.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:2e76a66d31ab3dafc4ebe707682d4ab9ec79ed91a10c7d218fd722fbf6dbd44d",
+      "id" : "urn:clique:3c8a8255f23ad3473efd502a52809aa1b89b93cd7f2d4b474d15b1360924e843",
       "nodes" : [
         {
-          "id" : "OMIM:159001",
-          "type" : "CLASS"
+          "id" : "Orphanet:70595",
+          "type" : "CLASS",
+          "lbl" : "Sensory ataxic neuropathy-dysarthria-ophthalmoparesis syndrome"
         },
+        {
+          "id" : "OMIM:607459",
+          "type" : "CLASS",
+          "lbl" : "sensory ataxic neuropathy, dysarthria, and ophthalmoparesis"
+        },
+        {
+          "id" : "Orphanet:402082",
+          "type" : "CLASS",
+          "lbl" : "Progressive myoclonic epilepsy type 5"
+        },
+        {
+          "id" : "MONDO:0011835",
+          "type" : "CLASS",
+          "lbl" : "sensory ataxic neuropathy, dysarthria, and ophthalmoparesis"
+        },
+        {
+          "id" : "DOID:0111276",
+          "type" : "CLASS",
+          "lbl" : "sensory ataxic neuropathy, dysarthria, and ophthalmoparesis"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011835",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:607459",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011835",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:402082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011835",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:70595",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111276",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011835",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011835",
+            "OMIM:607459",
+            "Orphanet:402082",
+            "DOID:0111276"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../3c8a8255f23ad3473efd502a52809aa1b89b93cd7f2d4b474d15b1360924e843.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2ace3e519a0fc771e79e8ad2bf2a03c08c16fc29c8c18253be2714b32a35f29f",
+      "nodes" : [
         {
           "id" : "MONDO:0021569",
           "type" : "CLASS",
@@ -761,6 +1347,11 @@
           "id" : "OMIM:181350",
           "type" : "CLASS",
           "lbl" : "emery-dreifuss muscular dystrophy 2, autosomal dominant"
+        },
+        {
+          "id" : "Orphanet:264",
+          "type" : "CLASS",
+          "lbl" : "Autosomal dominant limb-girdle muscular dystrophy type 1B"
         }
       ],
       "edges" : [
@@ -768,19 +1359,6 @@
           "sub" : "MONDO:0021569",
           "pred" : "siblingOf",
           "obj" : "DOID:0110301",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0021569",
-          "pred" : "siblingOf",
-          "obj" : "OMIM:159001",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -815,6 +1393,19 @@
               }
             ]
           }
+        },
+        {
+          "sub" : "MONDO:0021569",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:264",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
         }
       ],
       "equivalentNodesSets" : [
@@ -822,7 +1413,8 @@
           "nodeIds" : [
             "DOID:0070247",
             "MONDO:0021569",
-            "OMIM:181350"
+            "OMIM:181350",
+            "Orphanet:264"
           ]
         }
       ]
@@ -830,57 +1422,44 @@
   ]
 }
 ```
-![Clique image](../2e76a66d31ab3dafc4ebe707682d4ab9ec79ed91a10c7d218fd722fbf6dbd44d.png)
+![Clique image](../2ace3e519a0fc771e79e8ad2bf2a03c08c16fc29c8c18253be2714b32a35f29f.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:103a4a90641ac46ed6fa47ed6999c6b7e9da6cf41bcd42ed59797575ef3384ef",
+      "id" : "urn:clique:4a8693e491e1af9761f56480fc2a243395cd8e9ed252bc06f3a3132b41a7d41d",
       "nodes" : [
         {
-          "id" : "MONDO:0002450",
+          "id" : "MONDO:0010407",
           "type" : "CLASS",
-          "lbl" : "prostatic adenoma"
+          "lbl" : "intellectual disability, X-linked syndromic, Turner type"
         },
         {
-          "id" : "MONDO:0010811",
+          "id" : "DOID:0060811",
           "type" : "CLASS",
-          "lbl" : "benign prostatic hyperplasia"
+          "lbl" : "syndromic X-linked intellectual disability Turner type"
         },
         {
-          "id" : "OMIM:600082",
+          "id" : "Orphanet:85328",
           "type" : "CLASS",
-          "lbl" : "prostatic hyperplasia, benign"
+          "lbl" : "X-linked intellectual disability, Turner type"
         },
         {
-          "id" : "DOID:2883",
+          "id" : "Orphanet:3056",
           "type" : "CLASS",
-          "lbl" : "prostatic adenoma"
+          "lbl" : "X-linked intellectual disability, Brooks type"
         },
         {
-          "id" : "DOID:11132",
+          "id" : "OMIM:309590",
           "type" : "CLASS",
-          "lbl" : "prostatic hypertrophy"
+          "lbl" : "intellectual developmental disorder, x-linked, syndromic, turner  iia"
         }
       ],
       "edges" : [
         {
-          "sub" : "DOID:2883",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0002450",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0010811",
+          "sub" : "MONDO:0010407",
           "pred" : "siblingOf",
-          "obj" : "DOID:2883",
+          "obj" : "Orphanet:3056",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -891,9 +1470,9 @@
           }
         },
         {
-          "sub" : "DOID:11132",
+          "sub" : "DOID:0060811",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0010811",
+          "obj" : "MONDO:0010407",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -904,9 +1483,22 @@
           }
         },
         {
-          "sub" : "MONDO:0010811",
+          "sub" : "MONDO:0010407",
           "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:600082",
+          "obj" : "Orphanet:85328",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010407",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:309590",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -920,15 +1512,10 @@
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "DOID:2883",
-            "MONDO:0002450"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:11132",
-            "MONDO:0010811",
-            "OMIM:600082"
+            "DOID:0060811",
+            "MONDO:0010407",
+            "Orphanet:85328",
+            "OMIM:309590"
           ]
         }
       ]
@@ -936,44 +1523,83 @@
   ]
 }
 ```
-![Clique image](../103a4a90641ac46ed6fa47ed6999c6b7e9da6cf41bcd42ed59797575ef3384ef.png)
+![Clique image](../4a8693e491e1af9761f56480fc2a243395cd8e9ed252bc06f3a3132b41a7d41d.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:3e337326141a7778574482eefea7c394e6f6129224fc398d2cebc570e9d8e3b6",
+      "id" : "urn:clique:3af4d79454c45a1ef2fbb912ca80f3977e00fd8c2279b02ca7449ded8c24285c",
       "nodes" : [
         {
-          "id" : "MONDO:0002444",
+          "id" : "Orphanet:178464",
           "type" : "CLASS",
-          "lbl" : "melancholia"
+          "lbl" : "Hereditary myopathy with early respiratory failure"
         },
         {
-          "id" : "DOID:1470",
+          "id" : "MONDO:0011362",
           "type" : "CLASS",
-          "lbl" : "major depressive disorder"
+          "lbl" : "myopathy, myofibrillar, 9, with early respiratory failure"
         },
         {
-          "id" : "OMIM:608516",
+          "id" : "DOID:0111188",
           "type" : "CLASS",
-          "lbl" : "major depressive disorder"
+          "lbl" : "myofibrillar myopathy 9"
         },
         {
-          "id" : "MONDO:0002009",
+          "id" : "Orphanet:34521",
           "type" : "CLASS",
-          "lbl" : "major depressive disorder"
+          "lbl" : "Distal myopathy with early respiratory muscle involvement"
         },
         {
-          "id" : "DOID:2848",
+          "id" : "OMIM:603689",
           "type" : "CLASS",
-          "lbl" : "obsolete melancholia"
+          "lbl" : "myopathy, myofibrillar, 9, with early respiratory failure"
         }
       ],
       "edges" : [
         {
-          "sub" : "MONDO:0002009",
+          "sub" : "MONDO:0011362",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603689",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011362",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:34521",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111188",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011362",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011362",
           "pred" : "siblingOf",
-          "obj" : "DOID:2848",
+          "obj" : "Orphanet:178464",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -982,59 +1608,15 @@
               }
             ]
           }
-        },
-        {
-          "sub" : "DOID:1470",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0002009",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0002009",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:608516",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:2848",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0002444",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
         }
       ],
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "DOID:1470",
-            "MONDO:0002009",
-            "OMIM:608516"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "MONDO:0002444",
-            "DOID:2848"
+            "MONDO:0011362",
+            "OMIM:603689",
+            "Orphanet:34521",
+            "DOID:0111188"
           ]
         }
       ]
@@ -1042,43 +1624,44 @@
   ]
 }
 ```
-![Clique image](../3e337326141a7778574482eefea7c394e6f6129224fc398d2cebc570e9d8e3b6.png)
+![Clique image](../3af4d79454c45a1ef2fbb912ca80f3977e00fd8c2279b02ca7449ded8c24285c.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:5d6bffba35c86de6e1fa8d349f0a56355c18c26aa00fb83781eb2f6320edd7b7",
+      "id" : "urn:clique:2797ade4fe734cb1a3c6d785642ce02c73c6a93f319c3473d8c33d40747bb7f0",
       "nodes" : [
         {
-          "id" : "OMIM:600795",
+          "id" : "MONDO:0011841",
           "type" : "CLASS",
-          "lbl" : "frontotemporal dementia and/or amyotrophic lateral sclerosis 7"
+          "lbl" : "biotin-responsive basal ganglia disease"
         },
         {
-          "id" : "DOID:0111227",
+          "id" : "Orphanet:199348",
           "type" : "CLASS",
-          "lbl" : "chromosome 3-linked frontotemporal dementia"
+          "lbl" : "Thiamine-responsive encephalopathy"
         },
         {
-          "id" : "OMIM:614696",
-          "type" : "CLASS"
+          "id" : "OMIM:607483",
+          "type" : "CLASS",
+          "lbl" : "thiamine metabolism dysfunction syndrome 2 (biotin- or thiamine-responsive type)"
         },
         {
-          "id" : "MONDO:0010936",
+          "id" : "Orphanet:65284",
           "type" : "CLASS",
-          "lbl" : "frontotemporal dementia and/or amyotrophic lateral sclerosis 7"
+          "lbl" : "Biotin-thiamine-responsive basal ganglia disease"
         },
         {
-          "id" : "DOID:0060208",
+          "id" : "DOID:0050659",
           "type" : "CLASS",
-          "lbl" : "obsolete amyotrophic lateral sclerosis type 17"
+          "lbl" : "biotin-responsive basal ganglia disease"
         }
       ],
       "edges" : [
         {
-          "sub" : "DOID:0111227",
+          "sub" : "MONDO:0011841",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0010936",
+          "obj" : "OMIM:607483",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1089,40 +1672,40 @@
           }
         },
         {
-          "sub" : "MONDO:0010936",
-          "pred" : "siblingOf",
-          "obj" : "DOID:0060208",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0010936",
-          "pred" : "siblingOf",
-          "obj" : "OMIM:614696",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0010936",
+          "sub" : "MONDO:0011841",
           "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:600795",
+          "obj" : "Orphanet:199348",
           "meta" : {
             "basicPropertyValues" : [
               {
                 "pred" : "https://w3id.org/kgviz/penwidth",
                 "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0050659",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011841",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011841",
+          "pred" : "siblingOf",
+          "obj" : "Orphanet:65284",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
               }
             ]
           }
@@ -1131,9 +1714,10 @@
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "MONDO:0010936",
-            "DOID:0111227",
-            "OMIM:600795"
+            "OMIM:607483",
+            "MONDO:0011841",
+            "Orphanet:199348",
+            "DOID:0050659"
           ]
         }
       ]
@@ -1141,44 +1725,44 @@
   ]
 }
 ```
-![Clique image](../5d6bffba35c86de6e1fa8d349f0a56355c18c26aa00fb83781eb2f6320edd7b7.png)
+![Clique image](../2797ade4fe734cb1a3c6d785642ce02c73c6a93f319c3473d8c33d40747bb7f0.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:faf5ddc78a1ebf7a8f811532377c012d8f38235309973131933cb392fd89c06b",
+      "id" : "urn:clique:d660b8f31b07251a99fda2d836358cf1cf6a0fe1abf13a0e1eaad11c5347191d",
       "nodes" : [
         {
-          "id" : "DOID:3369",
+          "id" : "Orphanet:2170",
           "type" : "CLASS",
-          "lbl" : "Ewing sarcoma"
+          "lbl" : "Methylcobalamin deficiency type cblG"
         },
         {
-          "id" : "MONDO:0006094",
+          "id" : "OMIM:250940",
           "type" : "CLASS",
-          "lbl" : "Askin tumor"
+          "lbl" : "homocystinuria-megaloblastic anemia, cblg complementation  iia"
         },
         {
-          "id" : "MONDO:0012817",
+          "id" : "DOID:0112256",
           "type" : "CLASS",
-          "lbl" : "Ewing sarcoma"
+          "lbl" : "homocystinuria-megaloblastic anemia cblG type"
         },
         {
-          "id" : "OMIM:612219",
+          "id" : "DOID:0050733",
           "type" : "CLASS",
-          "lbl" : "ewing sarcoma"
+          "lbl" : "methylmalonic aciduria and homocystinuria type cblG"
         },
         {
-          "id" : "DOID:0050608",
+          "id" : "MONDO:0009609",
           "type" : "CLASS",
-          "lbl" : "Askin's tumor"
+          "lbl" : "methylcobalamin deficiency type cblG"
         }
       ],
       "edges" : [
         {
-          "sub" : "DOID:0050608",
+          "sub" : "DOID:0112256",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0006094",
+          "obj" : "MONDO:0009609",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1189,9 +1773,9 @@
           }
         },
         {
-          "sub" : "DOID:3369",
+          "sub" : "MONDO:0009609",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0012817",
+          "obj" : "Orphanet:2170",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1202,9 +1786,22 @@
           }
         },
         {
-          "sub" : "MONDO:0012817",
+          "sub" : "MONDO:0009609",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:250940",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009609",
           "pred" : "siblingOf",
-          "obj" : "DOID:0050608",
+          "obj" : "DOID:0050733",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1213,33 +1810,15 @@
               }
             ]
           }
-        },
-        {
-          "sub" : "MONDO:0012817",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:612219",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
         }
       ],
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "DOID:0050608",
-            "MONDO:0006094"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:3369",
-            "MONDO:0012817",
-            "OMIM:612219"
+            "MONDO:0009609",
+            "DOID:0112256",
+            "Orphanet:2170",
+            "OMIM:250940"
           ]
         }
       ]
@@ -1247,43 +1826,44 @@
   ]
 }
 ```
-![Clique image](../faf5ddc78a1ebf7a8f811532377c012d8f38235309973131933cb392fd89c06b.png)
+![Clique image](../d660b8f31b07251a99fda2d836358cf1cf6a0fe1abf13a0e1eaad11c5347191d.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:91b03fe7aad87c0f696bf778dee0d139db753824b61299a92057164b5caeafe0",
+      "id" : "urn:clique:d5c9a3111af44f0124e1b492ea1e8a230a0d75668f9b14abcb9c40c3b4098c95",
       "nodes" : [
         {
-          "id" : "MONDO:0010600",
+          "id" : "DOID:0112255",
           "type" : "CLASS",
-          "lbl" : "granulomatous disease, chronic, X-linked"
+          "lbl" : "homocystinuria-megaloblastic anemia cblE type"
         },
         {
-          "id" : "DOID:0070195",
+          "id" : "OMIM:236270",
           "type" : "CLASS",
-          "lbl" : "X-linked chronic granulomatous disease"
+          "lbl" : "homocystinuria-megaloblastic anemia, cble complementation  iia"
         },
         {
-          "id" : "DOID:0070190",
+          "id" : "DOID:0050732",
           "type" : "CLASS",
-          "lbl" : "obsolete autosomal dominant chronic granulomatous disease"
+          "lbl" : "methylmalonic aciduria and homocystinuria type cblE"
         },
         {
-          "id" : "OMIM:306400",
+          "id" : "Orphanet:2169",
           "type" : "CLASS",
-          "lbl" : "granulomatous disease, chronic, X-linked"
+          "lbl" : "Methylcobalamin deficiency type cblE"
         },
         {
-          "id" : "OMIM:138990",
-          "type" : "CLASS"
+          "id" : "MONDO:0009354",
+          "type" : "CLASS",
+          "lbl" : "methylcobalamin deficiency type cblE"
         }
       ],
       "edges" : [
         {
-          "sub" : "DOID:0070190",
+          "sub" : "DOID:0112255",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0010600",
+          "obj" : "MONDO:0009354",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1294,22 +1874,9 @@
           }
         },
         {
-          "sub" : "MONDO:0010600",
-          "pred" : "siblingOf",
-          "obj" : "DOID:0070195",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0010600",
+          "sub" : "MONDO:0009354",
           "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:138990",
+          "obj" : "OMIM:236270",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1320,9 +1887,22 @@
           }
         },
         {
-          "sub" : "MONDO:0010600",
+          "sub" : "MONDO:0009354",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:2169",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009354",
           "pred" : "siblingOf",
-          "obj" : "OMIM:306400",
+          "obj" : "DOID:0050732",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1336,9 +1916,10 @@
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "MONDO:0010600",
-            "DOID:0070190",
-            "OMIM:138990"
+            "MONDO:0009354",
+            "DOID:0112255",
+            "OMIM:236270",
+            "Orphanet:2169"
           ]
         }
       ]
@@ -1346,43 +1927,44 @@
   ]
 }
 ```
-![Clique image](../91b03fe7aad87c0f696bf778dee0d139db753824b61299a92057164b5caeafe0.png)
+![Clique image](../d5c9a3111af44f0124e1b492ea1e8a230a0d75668f9b14abcb9c40c3b4098c95.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:bb676936a5a9b9d7aad4c105255295d3f621a8227cf3e916415bd890dddac9c9",
+      "id" : "urn:clique:b3ef31d2654b330b4734bbdfabf89cdbb56a0ef4940a3b20180d08eceeab4022",
       "nodes" : [
         {
-          "id" : "OMIM:159000",
-          "type" : "CLASS"
+          "id" : "DOID:0110169",
+          "type" : "CLASS",
+          "lbl" : "Charcot-Marie-Tooth disease axonal type 2P"
         },
         {
-          "id" : "DOID:0080094",
+          "id" : "Orphanet:300319",
           "type" : "CLASS",
-          "lbl" : "myofibrillar myopathy 3"
+          "lbl" : "Charcot-Marie-Tooth disease type 2P"
         },
         {
-          "id" : "OMIM:609200",
+          "id" : "OMIM:614436",
           "type" : "CLASS",
-          "lbl" : "myopathy, myofibrillar, 3"
+          "lbl" : "charcot-marie-tooth disease, axonal,  iia 2p"
         },
         {
-          "id" : "MONDO:0012215",
+          "id" : "Orphanet:99941",
           "type" : "CLASS",
-          "lbl" : "myofibrillar myopathy 3"
+          "lbl" : "Autosomal dominant Charcot-Marie-Tooth disease type 2G"
         },
         {
-          "id" : "DOID:0110300",
+          "id" : "MONDO:0013753",
           "type" : "CLASS",
-          "lbl" : "obsolete autosomal dominant limb-girdle muscular dystrophy type 1A"
+          "lbl" : "Charcot-Marie-Tooth disease axonal type 2P"
         }
       ],
       "edges" : [
         {
-          "sub" : "DOID:0080094",
+          "sub" : "MONDO:0013753",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0012215",
+          "obj" : "OMIM:614436",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1393,22 +1975,9 @@
           }
         },
         {
-          "sub" : "MONDO:0012215",
-          "pred" : "siblingOf",
-          "obj" : "DOID:0110300",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0012215",
+          "sub" : "DOID:0110169",
           "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:609200",
+          "obj" : "MONDO:0013753",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1419,9 +1988,22 @@
           }
         },
         {
-          "sub" : "MONDO:0012215",
+          "sub" : "MONDO:0013753",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:99941",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013753",
           "pred" : "siblingOf",
-          "obj" : "OMIM:159000",
+          "obj" : "Orphanet:300319",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1435,9 +2017,10 @@
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "DOID:0080094",
-            "MONDO:0012215",
-            "OMIM:609200"
+            "DOID:0110169",
+            "MONDO:0013753",
+            "OMIM:614436",
+            "Orphanet:99941"
           ]
         }
       ]
@@ -1445,42 +2028,44 @@
   ]
 }
 ```
-![Clique image](../bb676936a5a9b9d7aad4c105255295d3f621a8227cf3e916415bd890dddac9c9.png)
+![Clique image](../b3ef31d2654b330b4734bbdfabf89cdbb56a0ef4940a3b20180d08eceeab4022.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:48fd72d504062e6f847898419ca57d4a71fc4aa7d059cc75d362e87ef4b13741",
+      "id" : "urn:clique:8b26d012b04535e24b04256c8f3c46e15b5a8b82d2e3f5d9b315c9df82016a4e",
       "nodes" : [
         {
-          "id" : "OMIM:614562",
-          "type" : "CLASS"
-        },
-        {
-          "id" : "OMIM:135900",
+          "id" : "Orphanet:496",
           "type" : "CLASS",
-          "lbl" : "coffin-siris syndrome 1"
+          "lbl" : "Thost-Unna palmoplantar keratoderma"
         },
         {
-          "id" : "OMIM:609943",
-          "type" : "CLASS"
-        },
-        {
-          "id" : "DOID:0070042",
+          "id" : "MONDO:0010962",
           "type" : "CLASS",
-          "lbl" : "Coffin-Siris syndrome 1"
+          "lbl" : "diffuse nonepidermolytic palmoplantar keratoderma"
         },
         {
-          "id" : "MONDO:0007617",
+          "id" : "Orphanet:530838",
           "type" : "CLASS",
-          "lbl" : "Coffin-Siris syndrome 1"
+          "lbl" : "KRT1-related diffuse nonepidermolytic keratoderma"
+        },
+        {
+          "id" : "OMIM:600962",
+          "type" : "CLASS",
+          "lbl" : "palmoplantar keratoderma, nonepidermolytic"
+        },
+        {
+          "id" : "DOID:0050428",
+          "type" : "CLASS",
+          "lbl" : "nonepidermolytic palmoplantar keratoderma"
         }
       ],
       "edges" : [
         {
-          "sub" : "MONDO:0007617",
+          "sub" : "DOID:0050428",
           "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:135900",
+          "obj" : "MONDO:0010962",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1491,9 +2076,9 @@
           }
         },
         {
-          "sub" : "MONDO:0007617",
+          "sub" : "MONDO:0010962",
           "pred" : "siblingOf",
-          "obj" : "OMIM:614562",
+          "obj" : "Orphanet:496",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1504,9 +2089,9 @@
           }
         },
         {
-          "sub" : "DOID:0070042",
+          "sub" : "MONDO:0010962",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0007617",
+          "obj" : "OMIM:600962",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1517,104 +2102,9 @@
           }
         },
         {
-          "sub" : "MONDO:0007617",
-          "pred" : "siblingOf",
-          "obj" : "OMIM:609943",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "MONDO:0007617",
-            "OMIM:135900",
-            "DOID:0070042"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../48fd72d504062e6f847898419ca57d4a71fc4aa7d059cc75d362e87ef4b13741.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:0bccca2242a1db418ea81b4604b278d301d2163bb77c54cdd8954afe5553500d",
-      "nodes" : [
-        {
-          "id" : "DOID:0060160",
-          "type" : "CLASS",
-          "lbl" : "childhood spinal muscular atrophy"
-        },
-        {
-          "id" : "DOID:13137",
-          "type" : "CLASS",
-          "lbl" : "Werdnig-Hoffmann disease"
-        },
-        {
-          "id" : "MONDO:0009669",
-          "type" : "CLASS",
-          "lbl" : "spinal muscular atrophy, type 1"
-        },
-        {
-          "id" : "OMIM:253300",
-          "type" : "CLASS",
-          "lbl" : "spinal muscular atrophy,  iia 1"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "MONDO:0009669",
-          "pred" : "is_a",
-          "obj" : "DOID:0060160",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.4999999999999999
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0009669",
-          "pred" : "is_a",
-          "obj" : "DOID:0060160",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:13137",
+          "sub" : "MONDO:0010962",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0009669",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0009669",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:253300",
+          "obj" : "Orphanet:530838",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1628,9 +2118,10 @@
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "DOID:13137",
-            "MONDO:0009669",
-            "OMIM:253300"
+            "DOID:0050428",
+            "MONDO:0010962",
+            "OMIM:600962",
+            "Orphanet:530838"
           ]
         }
       ]
@@ -1638,39 +2129,70 @@
   ]
 }
 ```
-![Clique image](../0bccca2242a1db418ea81b4604b278d301d2163bb77c54cdd8954afe5553500d.png)
+![Clique image](../8b26d012b04535e24b04256c8f3c46e15b5a8b82d2e3f5d9b315c9df82016a4e.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:ad39ec1e38b314f6b42b61ea7033a2f2e43e0637b0d4a7ddd66b514437869c66",
+      "id" : "urn:clique:075f9bcfd4b03da8fe57d2fc0b8021874bdde87463d8c895b38304f4791e39c5",
       "nodes" : [
         {
-          "id" : "DOID:0111649",
+          "id" : "Orphanet:97685",
           "type" : "CLASS",
-          "lbl" : "ectodermal dysplasia, ectrodactyly, and macular dystrophy syndrome"
+          "lbl" : "17q11 microdeletion syndrome"
         },
         {
-          "id" : "MONDO:0009155",
+          "id" : "Orphanet:137634",
           "type" : "CLASS",
-          "lbl" : "EEM syndrome"
+          "lbl" : "Overgrowth-macrocephaly-facial dysmorphism syndrome"
         },
         {
-          "id" : "MONDO:0021849",
+          "id" : "MONDO:0013357",
           "type" : "CLASS",
-          "lbl" : "obsolete alopecia macular degeneration growth retardation syndrome"
+          "lbl" : "chromosome 17q11.2 deletion syndrome, 1.4Mb"
         },
         {
-          "id" : "OMIM:225280",
+          "id" : "DOID:0060403",
           "type" : "CLASS",
-          "lbl" : "ectodermal dysplasia, ectrodactyly, and macular dystrophy syndrome"
+          "lbl" : "chromosome 17q11.2 deletion syndrome"
+        },
+        {
+          "id" : "OMIM:613675",
+          "type" : "CLASS",
+          "lbl" : "chromosome 17q11.2 deletion syndrome, 1.4-mb"
         }
       ],
       "edges" : [
         {
-          "sub" : "MONDO:0009155",
+          "sub" : "MONDO:0013357",
+          "pred" : "owl:equivalentClass",
+          "obj" : "Orphanet:137634",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013357",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:613675",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0013357",
           "pred" : "siblingOf",
-          "obj" : "DOID:0111649",
+          "obj" : "Orphanet:97685",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1681,22 +2203,9 @@
           }
         },
         {
-          "sub" : "MONDO:0009155",
+          "sub" : "DOID:0060403",
           "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:225280",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0111649",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0021849",
+          "obj" : "MONDO:0013357",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1710,14 +2219,10 @@
       "equivalentNodesSets" : [
         {
           "nodeIds" : [
-            "OMIM:225280",
-            "MONDO:0009155"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "MONDO:0021849",
-            "DOID:0111649"
+            "MONDO:0013357",
+            "Orphanet:137634",
+            "OMIM:613675",
+            "DOID:0060403"
           ]
         }
       ]
@@ -1725,341 +2230,4 @@
   ]
 }
 ```
-![Clique image](../ad39ec1e38b314f6b42b61ea7033a2f2e43e0637b0d4a7ddd66b514437869c66.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:2632bbe93218d3a56d302b9a271ba0f94a5f979c5de05281b7675c9d66f3a244",
-      "nodes" : [
-        {
-          "id" : "DOID:417",
-          "type" : "CLASS",
-          "lbl" : "autoimmune disease"
-        },
-        {
-          "id" : "MONDO:0007179",
-          "type" : "CLASS",
-          "lbl" : "autoimmune disease"
-        },
-        {
-          "id" : "MONDO:0025512",
-          "type" : "CLASS",
-          "lbl" : "type II hypersensitivity reaction disease"
-        },
-        {
-          "id" : "OMIM:109100",
-          "type" : "CLASS",
-          "lbl" : "autoimmune disease"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "DOID:417",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0007179",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0007179",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:109100",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0025512",
-          "pred" : "is_a",
-          "obj" : "DOID:417",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.4999999999999999
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0025512",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0007179",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "DOID:417",
-            "MONDO:0007179",
-            "OMIM:109100"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../2632bbe93218d3a56d302b9a271ba0f94a5f979c5de05281b7675c9d66f3a244.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:c4637d0d6852518eed08bb1b50dadad7e552cc5a41e511f8bad1af1cea97a560",
-      "nodes" : [
-        {
-          "id" : "DOID:0060600",
-          "type" : "CLASS",
-          "lbl" : "obsolete hereditary motor and sensory neuropathy with agenesis of the corpus callosum"
-        },
-        {
-          "id" : "MONDO:0000902",
-          "type" : "CLASS",
-          "lbl" : "agenesis of the corpus callosum with peripheral neuropathy"
-        },
-        {
-          "id" : "OMIM:218000",
-          "type" : "CLASS",
-          "lbl" : "agenesis of the corpus callosum with peripheral neuropathy"
-        },
-        {
-          "id" : "DOID:0090003",
-          "type" : "CLASS",
-          "lbl" : "agenesis of the corpus callosum with peripheral neuropathy"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "MONDO:0000902",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:218000",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0060600",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0000902",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0000902",
-          "pred" : "siblingOf",
-          "obj" : "DOID:0090003",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "OMIM:218000",
-            "MONDO:0000902",
-            "DOID:0060600"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../c4637d0d6852518eed08bb1b50dadad7e552cc5a41e511f8bad1af1cea97a560.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:2b5fe573de245b92bae9a4773b26de7f7c12e3d10f445d5ff06943198ae97416",
-      "nodes" : [
-        {
-          "id" : "DOID:0110305",
-          "type" : "CLASS",
-          "lbl" : "autosomal dominant limb-girdle muscular dystrophy type 1"
-        },
-        {
-          "id" : "MONDO:0021018",
-          "type" : "CLASS",
-          "lbl" : "autosomal dominant limb-girdle muscular dystrophy type 1D (DNAJB6)"
-        },
-        {
-          "id" : "OMIM:603511",
-          "type" : "CLASS",
-          "lbl" : "muscular dystrophy, limb-girdle, autosomal dominant 1"
-        },
-        {
-          "id" : "MONDO:0018098",
-          "type" : "CLASS",
-          "lbl" : "autosomal dominant limb-girdle muscular dystrophy type 1E (DES)"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "DOID:0110305",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0021018",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0021018",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:603511",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0018098",
-          "pred" : "siblingOf",
-          "obj" : "DOID:0110305",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "DOID:0110305",
-            "MONDO:0021018",
-            "OMIM:603511"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../2b5fe573de245b92bae9a4773b26de7f7c12e3d10f445d5ff06943198ae97416.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:b452a8213cb19e8aa1e8ffd14e77f8822b943d0eb6eea2076d5285d40a75153c",
-      "nodes" : [
-        {
-          "id" : "DOID:0060006",
-          "type" : "CLASS",
-          "lbl" : "obsolete artemis deficiency"
-        },
-        {
-          "id" : "MONDO:0011225",
-          "type" : "CLASS",
-          "lbl" : "severe combined immunodeficiency due to DCLRE1C deficiency"
-        },
-        {
-          "id" : "OMIM:602450",
-          "type" : "CLASS",
-          "lbl" : "severe combined immunodeficiency with sensitivity to ionizing radiation"
-        },
-        {
-          "id" : "DOID:0090012",
-          "type" : "CLASS",
-          "lbl" : "severe combined immunodeficiency with sensitivity to ionizing radiation"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "MONDO:0011225",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:602450",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0011225",
-          "pred" : "siblingOf",
-          "obj" : "DOID:0090012",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0060006",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0011225",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "MONDO:0011225",
-            "OMIM:602450",
-            "DOID:0060006"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../b452a8213cb19e8aa1e8ffd14e77f8822b943d0eb6eea2076d5285d40a75153c.png)
+![Clique image](../075f9bcfd4b03da8fe57d2fc0b8021874bdde87463d8c895b38304f4791e39c5.png)
