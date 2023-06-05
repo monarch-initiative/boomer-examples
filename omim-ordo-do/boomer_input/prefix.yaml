@@ -23,7 +23,6 @@ MEDDRA_1: http://identifiers.org/meddra/
 MESH: https://meshb.nlm.nih.gov/record/ui?ui=
 MESH_1: http://identifiers.org/mesh/
 MFOMD: http://purl.obolibrary.org/obo/MFOMD_
-MIMPS: https://omim.org/phenotypicSeries/
 MONDO: http://purl.obolibrary.org/obo/MONDO_
 MP: http://purl.obolibrary.org/obo/MP_
 MPATH: http://purl.obolibrary.org/obo/MPATH_
@@ -35,6 +34,7 @@ NCIT: http://purl.obolibrary.org/obo/NCIT_
 OBI: http://purl.obolibrary.org/obo/OBI_
 OGMS: http://purl.obolibrary.org/obo/OGMS_
 OMIM: https://omim.org/entry/
+omim: https://omim.org/entry/
 OMIMPS: https://omim.org/phenotypicSeries/
 Orphanet: http://www.orpha.net/ORDO/Orphanet_
 PATO: http://purl.obolibrary.org/obo/PATO_

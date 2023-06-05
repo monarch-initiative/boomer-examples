@@ -5,7 +5,9 @@ BOOMER_OUTPUT_DIR = boomer_output
 ALL_RUNS=mondo_all
 RUN_ID=mondo_omim_ordo_do
 COMPARISON_DIR = $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/comparison
-OWL_FILE = $(BOOMER_INPUT_DIR)/merged.owl
+OWL_FILE = $(BOOMER_INPUT_DIR)/mondo.owl
+MERGED_OWL_FILE = $(BOOMER_INPUT_DIR)/mondo_with_merged_labels.owl
+MERGED_DB_FILE = $(BOOMER_INPUT_DIR)/mondo_with_merged_labels.db
 
 $(DATA_DIR)/ $(BOOMER_INPUT_DIR)/ $(BOOMER_OUTPUT_DIR)/:
 	mkdir -p $@
@@ -20,8 +22,20 @@ $(BOOMER_INPUT_DIR)/symbiont-merged-all.owl: | $(BOOMER_INPUT_DIR)/
 $(BOOMER_INPUT_DIR)/mondo.owl:  | $(BOOMER_INPUT_DIR)/
 	wget http://purl.obolibrary.org/obo/mondo.owl -O $@
 
-$(BOOMER_INPUT_DIR)/mondo.db: $(BOOMER_INPUT_DIR)/mondo.owl
+# $(BOOMER_INPUT_DIR)/mondo.db: $(BOOMER_INPUT_DIR)/mondo.owl
+# 	semsql make $@
+
+#  Get all labels from merged.owl using robot + SPARQL
+$(BOOMER_INPUT_DIR)/merged_labels.owl: $(BOOMER_INPUT_DIR)/merged.owl
+	robot query --format ttl --input $< --query labels.sparql $@
+
+$(BOOMER_INPUT_DIR)/mondo_with_merged_labels.owl: $(BOOMER_INPUT_DIR)/merged_labels.owl
+	robot merge --input $< --input $(OWL_FILE) --output $@
+
+$(BOOMER_INPUT_DIR)/mondo_with_merged_labels.db: $(BOOMER_INPUT_DIR)/mondo_with_merged_labels.owl
 	semsql make $@
+
+labeled-db:$(BOOMER_INPUT_DIR)/mondo_with_merged_labels.db
 
 #####################
 ## Mappings #########
@@ -40,7 +54,7 @@ $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml
 		--run-id $(RUN_ID)
 
 $(DATA_DIR)/$(RUN_ID).sssom.tsv: $(DATA_DIR)/mondo_all.sssom.tsv
-	sssom filter --object_id OMIM:% --object_id OMIMPS:% --object_id MIMPS:% --object_id Orphanet:% --object_id DOID:% $< -o $@
+	sssom filter --object_id OMIM:% --object_id OMIMPS:% --object_id Orphanet:% --object_id DOID:% $< -o $@
 	sssom parse $@ -o $@
 
 $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv: $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.sssom.tsv
@@ -68,7 +82,7 @@ boomer-prepare-dirs:
 
 boomer: | $(BOOMER_OUTPUT_DIR)/$(RUN_ID)/
 	boomer --ptable $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.ptable.tsv \
-		--ontology $(OWL_FILE) \
+		--ontology $(MERGED_OWL_FILE) \
 		--prefixes $(BOOMER_INPUT_DIR)/prefix.yaml \
 		--output $(BOOMER_OUTPUT_DIR)/$(RUN_ID) \
 		--window-count 10 \
@@ -112,7 +126,7 @@ $(COMPARISON_DIR)/diff.sssom.tsv: $(COMPARISON_DIR)/boomer.sssom.tsv
 # Additional flags that can be used: --reject-non-exact --promote-xref-to-exact
 # More info: https://github.com/INCATools/ontology-access-kit/blob/main/src/oaklib/utilities/mapping/boomer_utils.py#L335-L342
 $(COMPARISON_DIR)/boomerang.sssom.tsv: $(BOOMER_OUTPUT_DIR)/$(RUN_ID).md
-	boomerang compare $< -i $(BOOMER_INPUT_DIR)/mondo.db -L 0.9 > $@
+	boomerang compare $< -i $(MERGED_DB_FILE) -L 0.9 > $@
 
 .PHONY: uncommon_mappings
 uncommon_mappings: $(COMPARISON_DIR)/diff.sssom.tsv $(COMPARISON_DIR)/boomerang.sssom.tsv
@@ -131,7 +145,7 @@ get-large-cliques:
 
 
 # SEQUENCE
-# 1. make boomer_input/mondo.db -B
+# 1. make labeled-db -B
 # 2. make ../data/mondo_omim_ordo_do.sssom.tsv -B
 # 3. make boomer_input/mondo_omim_ordo_do/combined.ptable.tsv -B
 # 4. make delete-boomer-reports
