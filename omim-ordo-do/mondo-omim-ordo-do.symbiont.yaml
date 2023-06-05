@@ -5,13 +5,13 @@ ontologies:
     prefix: MONDO
   - id: omim
     prefix: OMIM
-    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/omim.owl
+    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2023-04-05/omim.owl
   - id: doid
     prefix: DOID
-    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/doid.owl
+    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2023-04-05/doid.owl
   - id: ordo
     prefix: Orphanet
-    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-04-26/ordo.owl
+    mirror_from: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2023-04-05/ordo.owl
 config:
   symbiont_config: ../mondo-omim-ordo-do.symbiont.yaml
   boomer_style: ../../config/boomer-style.json
@@ -29,6 +29,12 @@ config:
         runs: 1
         mappings:
           - mondo.sssom.tsv
+      - id: mondo_omim_ordo_do
+        window_count: 1
+        runs: 1
+        exhaustive_search_limit: 10
+        mappings:
+          - mondo_omim_ordo_do.sssom.tsv
       - id: mondo_all
         window_count: 1
         runs: 1
@@ -43,6 +49,8 @@ mapping_registry:
   - local_name: mondo.sssom.tsv
     registry_confidence: 0.99
   - local_name: mondo_all.sssom.tsv
+    registry_confidence: 0.80
+  - local_name: mondo_omim_ordo_do.sssom.tsv
     registry_confidence: 0.80
 custom_prefix_map:
   prefix_synonyms:

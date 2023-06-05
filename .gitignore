@@ -3,4 +3,16 @@
 boomer_input/symbiont-merged-all.owl
 omim-ordo/tmp/*
 omim-ordo/boomer_input/symbiont-merged-all.owl
-omim-ordo-do/boomer_input/symbiont-merged-all.owl
+omim-ordo-do/boomer_input/*.owl
+notebooks/output/*.json
+omim-ordo-do/boomer_output/*/*.json
+omim-ordo-do/boomer_output/*/*.dot
+omim-ordo-do/boomer_output/mondo_omim_ordo_do/comparison/diff.sssom.tsv
+omim-ordo-do/boomer_input/symbiont-merged-all.db
+omim-ordo-do/.template.db
+omim-ordo-do/boomer_input/mondo.db
+omim-ordo-do/boomer_input/mondo-relation-graph.tsv.gz
+omim-ordo-do/boomer_output/mondo_omim_ordo_do/comparison/report.html
+omim-ordo-do/boomer_input/merged.db
+omim-ordo-do/boomer_input/mondo_with_merged_labels-relation-graph.tsv.gz
+omim-ordo-do/boomer_input/mondo_with_merged_labels.db

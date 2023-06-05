@@ -34,7 +34,7 @@ NCI: http://purl.obolibrary.org/obo/NCIT_
 NCIT: http://purl.obolibrary.org/obo/NCIT_
 OBI: http://purl.obolibrary.org/obo/OBI_
 OGMS: http://purl.obolibrary.org/obo/OGMS_
-OMIM: http://omim.org/entry/
+OMIM: https://omim.org/entry/
 OMIMPS: https://omim.org/phenotypicSeries/
 Orphanet: http://www.orpha.net/ORDO/Orphanet_
 PATO: http://purl.obolibrary.org/obo/PATO_
