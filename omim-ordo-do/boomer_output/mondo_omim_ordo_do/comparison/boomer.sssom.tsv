@@ -221,7 +221,7 @@ DOID:0050517	owl:equivalentClass	MONDO:0000343	semapv:UnspecifiedMatching
 DOID:0050518	owl:equivalentClass	MONDO:0000344	semapv:UnspecifiedMatching
 DOID:0050521	owl:equivalentClass	MONDO:0000345	semapv:UnspecifiedMatching
 DOID:0050522	owl:equivalentClass	MONDO:0000346	semapv:UnspecifiedMatching
-DOID:0050523	owl:equivalentClass	MONDO:0004963	semapv:UnspecifiedMatching
+DOID:0050523	owl:equivalentClass	MONDO:0019471	semapv:UnspecifiedMatching
 DOID:0050524	owl:equivalentClass	MONDO:0018911	semapv:UnspecifiedMatching
 DOID:0050526	owl:equivalentClass	MONDO:0007646	semapv:UnspecifiedMatching
 DOID:0050528	owl:equivalentClass	MONDO:0021013	semapv:UnspecifiedMatching
@@ -2107,6 +2107,7 @@ DOID:0080343	owl:equivalentClass	MONDO:0014804	semapv:UnspecifiedMatching
 DOID:0080344	owl:equivalentClass	MONDO:0007339	semapv:UnspecifiedMatching
 DOID:0080345	owl:equivalentClass	MONDO:0054740	semapv:UnspecifiedMatching
 DOID:0080346	owl:equivalentClass	MONDO:0040503	semapv:UnspecifiedMatching
+DOID:0080347	owl:equivalentClass	MONDO:0006288	semapv:UnspecifiedMatching
 DOID:0080348	owl:equivalentClass	MONDO:0007088	semapv:UnspecifiedMatching
 DOID:0080349	owl:equivalentClass	MONDO:0013056	semapv:UnspecifiedMatching
 DOID:0080350	owl:equivalentClass	MONDO:0015013	semapv:UnspecifiedMatching
@@ -4989,6 +4990,7 @@ DOID:1206	owl:equivalentClass	MONDO:0010726	semapv:UnspecifiedMatching
 DOID:12064	owl:equivalentClass	MONDO:0001426	semapv:UnspecifiedMatching
 DOID:12070	owl:equivalentClass	MONDO:0001427	semapv:UnspecifiedMatching
 DOID:12072	owl:equivalentClass	MONDO:0001428	semapv:UnspecifiedMatching
+DOID:12084	owl:equivalentClass	MONDO:0001429	semapv:UnspecifiedMatching
 DOID:12087	owl:equivalentClass	MONDO:0001430	semapv:UnspecifiedMatching
 DOID:1209	owl:equivalentClass	MONDO:0001431	semapv:UnspecifiedMatching
 DOID:12096	owl:equivalentClass	MONDO:0020532	semapv:UnspecifiedMatching
@@ -5154,6 +5156,7 @@ DOID:12522	owl:equivalentClass	MONDO:0001540	semapv:UnspecifiedMatching
 DOID:12524	owl:equivalentClass	MONDO:0001541	semapv:UnspecifiedMatching
 DOID:12526	owl:equivalentClass	MONDO:0006994	semapv:UnspecifiedMatching
 DOID:12527	owl:equivalentClass	MONDO:0001542	semapv:UnspecifiedMatching
+DOID:12528	owl:equivalentClass	MONDO:0001543	semapv:UnspecifiedMatching
 DOID:12529	owl:equivalentClass	MONDO:0001544	semapv:UnspecifiedMatching
 DOID:12531	owl:equivalentClass	MONDO:0019565	semapv:UnspecifiedMatching
 DOID:12537	owl:equivalentClass	MONDO:0001546	semapv:UnspecifiedMatching
@@ -5835,6 +5838,7 @@ DOID:14534	owl:equivalentClass	MONDO:0001990	semapv:UnspecifiedMatching
 DOID:14535	owl:equivalentClass	MONDO:0001991	semapv:UnspecifiedMatching
 DOID:14544	owl:equivalentClass	MONDO:0001992	semapv:UnspecifiedMatching
 DOID:14545	owl:equivalentClass	MONDO:0001993	semapv:UnspecifiedMatching
+DOID:14546	owl:equivalentClass	MONDO:0001994	semapv:UnspecifiedMatching
 DOID:14547	owl:equivalentClass	MONDO:0001995	semapv:UnspecifiedMatching
 DOID:14548	owl:equivalentClass	MONDO:0001996	semapv:UnspecifiedMatching
 DOID:1455	owl:equivalentClass	MONDO:0005771	semapv:UnspecifiedMatching
@@ -5977,6 +5981,7 @@ DOID:1634	owl:equivalentClass	MONDO:0002063	semapv:UnspecifiedMatching
 DOID:1637	owl:equivalentClass	MONDO:0002064	semapv:UnspecifiedMatching
 DOID:1638	owl:equivalentClass	MONDO:0005696	semapv:UnspecifiedMatching
 DOID:1639	owl:equivalentClass	MONDO:0005962	semapv:UnspecifiedMatching
+DOID:1641	owl:equivalentClass	MONDO:0002065	semapv:UnspecifiedMatching
 DOID:1642	owl:equivalentClass	MONDO:0002066	semapv:UnspecifiedMatching
 DOID:1647	owl:equivalentClass	MONDO:0002067	semapv:UnspecifiedMatching
 DOID:1649	owl:equivalentClass	MONDO:0002068	semapv:UnspecifiedMatching
@@ -6317,6 +6322,8 @@ DOID:2394	owl:equivalentClass	MONDO:0008170	semapv:UnspecifiedMatching
 DOID:240	owl:equivalentClass	MONDO:0002289	semapv:UnspecifiedMatching
 DOID:2401	owl:equivalentClass	MONDO:0002290	semapv:UnspecifiedMatching
 DOID:2409	owl:equivalentClass	MONDO:0005946	semapv:UnspecifiedMatching
+DOID:2410	owl:equivalentClass	MONDO:0002291	semapv:UnspecifiedMatching
+DOID:2411	owl:equivalentClass	MONDO:0006235	semapv:UnspecifiedMatching
 DOID:2425	owl:equivalentClass	MONDO:0002293	semapv:UnspecifiedMatching
 DOID:2426	owl:equivalentClass	MONDO:0016730	semapv:UnspecifiedMatching
 DOID:2430	owl:equivalentClass	MONDO:0002295	semapv:UnspecifiedMatching
@@ -6625,6 +6632,7 @@ DOID:3030	owl:equivalentClass	MONDO:0004957	semapv:UnspecifiedMatching
 DOID:3033	owl:equivalentClass	MONDO:0002495	semapv:UnspecifiedMatching
 DOID:3038	owl:equivalentClass	MONDO:0002496	semapv:UnspecifiedMatching
 DOID:3039	owl:equivalentClass	MONDO:0006028	semapv:UnspecifiedMatching
+DOID:3042	owl:equivalentClass	MONDO:0006525	semapv:UnspecifiedMatching
 DOID:3044	owl:equivalentClass	MONDO:0002497	semapv:UnspecifiedMatching
 DOID:3047	owl:equivalentClass	MONDO:0006018	semapv:UnspecifiedMatching
 DOID:3049	owl:equivalentClass	MONDO:0015943	semapv:UnspecifiedMatching
@@ -7168,6 +7176,7 @@ DOID:4035	owl:equivalentClass	MONDO:0002844	semapv:UnspecifiedMatching
 DOID:4037	owl:equivalentClass	MONDO:0002845	semapv:UnspecifiedMatching
 DOID:4038	owl:equivalentClass	MONDO:0002846	semapv:UnspecifiedMatching
 DOID:404	owl:equivalentClass	MONDO:0005768	semapv:UnspecifiedMatching
+DOID:4043	owl:equivalentClass	MONDO:0002847	semapv:UnspecifiedMatching
 DOID:4044	owl:equivalentClass	MONDO:0002848	semapv:UnspecifiedMatching
 DOID:4045	owl:equivalentClass	MONDO:0005864	semapv:UnspecifiedMatching
 DOID:4047	owl:equivalentClass	MONDO:0002849	semapv:UnspecifiedMatching
@@ -7259,6 +7268,7 @@ DOID:4209	owl:equivalentClass	MONDO:0002916	semapv:UnspecifiedMatching
 DOID:421	owl:equivalentClass	MONDO:0002917	semapv:UnspecifiedMatching
 DOID:4210	owl:equivalentClass	MONDO:0002918	semapv:UnspecifiedMatching
 DOID:4211	owl:equivalentClass	MONDO:0002919	semapv:UnspecifiedMatching
+DOID:4217	owl:equivalentClass	MONDO:0002920	semapv:UnspecifiedMatching
 DOID:422	owl:equivalentClass	MONDO:0002921	semapv:UnspecifiedMatching
 DOID:4223	owl:equivalentClass	MONDO:0002922	semapv:UnspecifiedMatching
 DOID:4226	owl:equivalentClass	MONDO:0006745	semapv:UnspecifiedMatching
@@ -7320,6 +7330,7 @@ DOID:4306	owl:equivalentClass	MONDO:0002959	semapv:UnspecifiedMatching
 DOID:4307	owl:equivalentClass	MONDO:0002960	semapv:UnspecifiedMatching
 DOID:4308	owl:equivalentClass	MONDO:0006915	semapv:UnspecifiedMatching
 DOID:431	owl:equivalentClass	MONDO:0006862	semapv:UnspecifiedMatching
+DOID:4310	owl:equivalentClass	MONDO:0006975	semapv:UnspecifiedMatching
 DOID:4313	owl:equivalentClass	MONDO:0018747	semapv:UnspecifiedMatching
 DOID:4320	owl:equivalentClass	MONDO:0006871	semapv:UnspecifiedMatching
 DOID:4321	owl:equivalentClass	MONDO:0002961	semapv:UnspecifiedMatching
@@ -7365,6 +7376,7 @@ DOID:4394	owl:equivalentClass	MONDO:0002984	semapv:UnspecifiedMatching
 DOID:4397	owl:equivalentClass	MONDO:0006555	semapv:UnspecifiedMatching
 DOID:4398	owl:equivalentClass	MONDO:0015597	semapv:UnspecifiedMatching
 DOID:4399	owl:equivalentClass	MONDO:0006521	semapv:UnspecifiedMatching
+DOID:440	owl:equivalentClass	MONDO:0019056	semapv:UnspecifiedMatching
 DOID:4400	owl:equivalentClass	MONDO:0007446	semapv:UnspecifiedMatching
 DOID:4404	owl:equivalentClass	MONDO:0006589	semapv:UnspecifiedMatching
 DOID:4406	owl:equivalentClass	MONDO:0002987	semapv:UnspecifiedMatching
@@ -7599,6 +7611,7 @@ DOID:4838	owl:equivalentClass	MONDO:0003158	semapv:UnspecifiedMatching
 DOID:484	owl:equivalentClass	MONDO:0003159	semapv:UnspecifiedMatching
 DOID:4840	owl:equivalentClass	MONDO:0006962	semapv:UnspecifiedMatching
 DOID:4843	owl:equivalentClass	MONDO:0007667	semapv:UnspecifiedMatching
+DOID:4844	owl:equivalentClass	MONDO:0016698	semapv:UnspecifiedMatching
 DOID:4845	owl:equivalentClass	MONDO:0016692	semapv:UnspecifiedMatching
 DOID:4846	owl:equivalentClass	MONDO:0003163	semapv:UnspecifiedMatching
 DOID:4847	owl:equivalentClass	MONDO:0003164	semapv:UnspecifiedMatching
@@ -7619,6 +7632,7 @@ DOID:4869	owl:equivalentClass	MONDO:0006264	semapv:UnspecifiedMatching
 DOID:4870	owl:equivalentClass	MONDO:0006262	semapv:UnspecifiedMatching
 DOID:4871	owl:equivalentClass	MONDO:0003180	semapv:UnspecifiedMatching
 DOID:4872	owl:equivalentClass	MONDO:0003181	semapv:UnspecifiedMatching
+DOID:4873	owl:equivalentClass	MONDO:0003182	semapv:UnspecifiedMatching
 DOID:4875	owl:equivalentClass	MONDO:0006471	semapv:UnspecifiedMatching
 DOID:4876	owl:equivalentClass	MONDO:0003184	semapv:UnspecifiedMatching
 DOID:4877	owl:equivalentClass	MONDO:0003185	semapv:UnspecifiedMatching
@@ -7667,6 +7681,7 @@ DOID:4938	owl:equivalentClass	MONDO:0003216	semapv:UnspecifiedMatching
 DOID:4939	owl:equivalentClass	MONDO:0006481	semapv:UnspecifiedMatching
 DOID:4943	owl:equivalentClass	MONDO:0003218	semapv:UnspecifiedMatching
 DOID:4944	owl:equivalentClass	MONDO:0003219	semapv:UnspecifiedMatching
+DOID:4947	owl:equivalentClass	MONDO:0019087	semapv:UnspecifiedMatching
 DOID:4948	owl:equivalentClass	MONDO:0003220	semapv:UnspecifiedMatching
 DOID:4952	owl:equivalentClass	MONDO:0017416	semapv:UnspecifiedMatching
 DOID:4953	owl:equivalentClass	MONDO:0017373	semapv:UnspecifiedMatching
@@ -7686,6 +7701,7 @@ DOID:4972	owl:equivalentClass	MONDO:0006311	semapv:UnspecifiedMatching
 DOID:4974	owl:equivalentClass	MONDO:0005630	semapv:UnspecifiedMatching
 DOID:4976	owl:equivalentClass	MONDO:0005424	semapv:UnspecifiedMatching
 DOID:4977	owl:equivalentClass	MONDO:0019297	semapv:UnspecifiedMatching
+DOID:4985	owl:equivalentClass	MONDO:0021039	semapv:UnspecifiedMatching
 DOID:4986	owl:equivalentClass	MONDO:0003231	semapv:UnspecifiedMatching
 DOID:4988	owl:equivalentClass	MONDO:0003232	semapv:UnspecifiedMatching
 DOID:4989	owl:equivalentClass	MONDO:0004982	semapv:UnspecifiedMatching
@@ -7774,6 +7790,7 @@ DOID:5152	owl:equivalentClass	MONDO:0003305	semapv:UnspecifiedMatching
 DOID:5153	owl:equivalentClass	MONDO:0003306	semapv:UnspecifiedMatching
 DOID:5154	owl:equivalentClass	MONDO:0005676	semapv:UnspecifiedMatching
 DOID:5155	owl:equivalentClass	MONDO:0003307	semapv:UnspecifiedMatching
+DOID:5157	owl:equivalentClass	MONDO:0003308	semapv:UnspecifiedMatching
 DOID:5158	owl:equivalentClass	MONDO:0006294	semapv:UnspecifiedMatching
 DOID:5160	owl:equivalentClass	MONDO:0006659	semapv:UnspecifiedMatching
 DOID:5161	owl:equivalentClass	MONDO:0003310	semapv:UnspecifiedMatching
@@ -9236,6 +9253,7 @@ DOID:8498	owl:equivalentClass	MONDO:0004587	semapv:UnspecifiedMatching
 DOID:8499	owl:equivalentClass	MONDO:0004588	semapv:UnspecifiedMatching
 DOID:850	owl:equivalentClass	MONDO:0005275	semapv:UnspecifiedMatching
 DOID:8500	owl:equivalentClass	MONDO:0019118	semapv:UnspecifiedMatching
+DOID:8502	owl:equivalentClass	MONDO:0019337	semapv:UnspecifiedMatching
 DOID:8503	owl:equivalentClass	MONDO:0004591	semapv:UnspecifiedMatching
 DOID:8504	owl:equivalentClass	MONDO:0004592	semapv:UnspecifiedMatching
 DOID:8505	owl:equivalentClass	MONDO:0015614	semapv:UnspecifiedMatching
@@ -10751,6 +10769,7 @@ MONDO:0001424	owl:equivalentClass	DOID:12055	semapv:UnspecifiedMatching
 MONDO:0001426	owl:equivalentClass	DOID:12064	semapv:UnspecifiedMatching
 MONDO:0001427	owl:equivalentClass	DOID:12070	semapv:UnspecifiedMatching
 MONDO:0001428	owl:equivalentClass	DOID:12072	semapv:UnspecifiedMatching
+MONDO:0001429	owl:equivalentClass	DOID:12084	semapv:UnspecifiedMatching
 MONDO:0001430	owl:equivalentClass	DOID:12087	semapv:UnspecifiedMatching
 MONDO:0001431	owl:equivalentClass	DOID:1209	semapv:UnspecifiedMatching
 MONDO:0001433	owl:equivalentClass	DOID:121	semapv:UnspecifiedMatching
@@ -10856,6 +10875,7 @@ MONDO:0001539	owl:equivalentClass	DOID:12514	semapv:UnspecifiedMatching
 MONDO:0001540	owl:equivalentClass	DOID:12522	semapv:UnspecifiedMatching
 MONDO:0001541	owl:equivalentClass	DOID:12524	semapv:UnspecifiedMatching
 MONDO:0001542	owl:equivalentClass	DOID:12527	semapv:UnspecifiedMatching
+MONDO:0001543	owl:equivalentClass	DOID:12528	semapv:UnspecifiedMatching
 MONDO:0001544	owl:equivalentClass	DOID:12529	semapv:UnspecifiedMatching
 MONDO:0001546	owl:equivalentClass	DOID:12537	semapv:UnspecifiedMatching
 MONDO:0001547	owl:equivalentClass	DOID:12546	semapv:UnspecifiedMatching
@@ -11267,6 +11287,7 @@ MONDO:0001990	owl:equivalentClass	DOID:14534	semapv:UnspecifiedMatching
 MONDO:0001991	owl:equivalentClass	DOID:14535	semapv:UnspecifiedMatching
 MONDO:0001992	owl:equivalentClass	DOID:14544	semapv:UnspecifiedMatching
 MONDO:0001993	owl:equivalentClass	DOID:14545	semapv:UnspecifiedMatching
+MONDO:0001994	owl:equivalentClass	DOID:14546	semapv:UnspecifiedMatching
 MONDO:0001995	owl:equivalentClass	DOID:14547	semapv:UnspecifiedMatching
 MONDO:0001996	owl:equivalentClass	DOID:14548	semapv:UnspecifiedMatching
 MONDO:0001997	owl:equivalentClass	DOID:14550	semapv:UnspecifiedMatching
@@ -11326,6 +11347,7 @@ MONDO:0002061	owl:equivalentClass	DOID:1628	semapv:UnspecifiedMatching
 MONDO:0002062	owl:equivalentClass	DOID:1629	semapv:UnspecifiedMatching
 MONDO:0002063	owl:equivalentClass	DOID:1634	semapv:UnspecifiedMatching
 MONDO:0002064	owl:equivalentClass	DOID:1637	semapv:UnspecifiedMatching
+MONDO:0002065	owl:equivalentClass	DOID:1641	semapv:UnspecifiedMatching
 MONDO:0002066	owl:equivalentClass	DOID:1642	semapv:UnspecifiedMatching
 MONDO:0002067	owl:equivalentClass	DOID:1647	semapv:UnspecifiedMatching
 MONDO:0002068	owl:equivalentClass	DOID:1649	semapv:UnspecifiedMatching
@@ -11519,6 +11541,7 @@ MONDO:0002286	owl:equivalentClass	DOID:2388	semapv:UnspecifiedMatching
 MONDO:0002287	owl:equivalentClass	DOID:2392	semapv:UnspecifiedMatching
 MONDO:0002289	owl:equivalentClass	DOID:240	semapv:UnspecifiedMatching
 MONDO:0002290	owl:equivalentClass	DOID:2401	semapv:UnspecifiedMatching
+MONDO:0002291	owl:equivalentClass	DOID:2410	semapv:UnspecifiedMatching
 MONDO:0002293	owl:equivalentClass	DOID:2425	semapv:UnspecifiedMatching
 MONDO:0002295	owl:equivalentClass	DOID:2430	semapv:UnspecifiedMatching
 MONDO:0002297	owl:equivalentClass	DOID:2433	semapv:UnspecifiedMatching
@@ -11983,6 +12006,7 @@ MONDO:0002843	owl:equivalentClass	DOID:4034	semapv:UnspecifiedMatching
 MONDO:0002844	owl:equivalentClass	DOID:4035	semapv:UnspecifiedMatching
 MONDO:0002845	owl:equivalentClass	DOID:4037	semapv:UnspecifiedMatching
 MONDO:0002846	owl:equivalentClass	DOID:4038	semapv:UnspecifiedMatching
+MONDO:0002847	owl:equivalentClass	DOID:4043	semapv:UnspecifiedMatching
 MONDO:0002848	owl:equivalentClass	DOID:4044	semapv:UnspecifiedMatching
 MONDO:0002849	owl:equivalentClass	DOID:4047	semapv:UnspecifiedMatching
 MONDO:0002850	owl:equivalentClass	DOID:4048	semapv:UnspecifiedMatching
@@ -12049,6 +12073,7 @@ MONDO:0002916	owl:equivalentClass	DOID:4209	semapv:UnspecifiedMatching
 MONDO:0002917	owl:equivalentClass	DOID:421	semapv:UnspecifiedMatching
 MONDO:0002918	owl:equivalentClass	DOID:4210	semapv:UnspecifiedMatching
 MONDO:0002919	owl:equivalentClass	DOID:4211	semapv:UnspecifiedMatching
+MONDO:0002920	owl:equivalentClass	DOID:4217	semapv:UnspecifiedMatching
 MONDO:0002921	owl:equivalentClass	DOID:422	semapv:UnspecifiedMatching
 MONDO:0002922	owl:equivalentClass	DOID:4223	semapv:UnspecifiedMatching
 MONDO:0002923	owl:equivalentClass	DOID:4227	semapv:UnspecifiedMatching
@@ -12264,6 +12289,7 @@ MONDO:0003175	owl:equivalentClass	DOID:4866	semapv:UnspecifiedMatching
 MONDO:0003177	owl:equivalentClass	DOID:4868	semapv:UnspecifiedMatching
 MONDO:0003180	owl:equivalentClass	DOID:4871	semapv:UnspecifiedMatching
 MONDO:0003181	owl:equivalentClass	DOID:4872	semapv:UnspecifiedMatching
+MONDO:0003182	owl:equivalentClass	DOID:4873	semapv:UnspecifiedMatching
 MONDO:0003184	owl:equivalentClass	DOID:4876	semapv:UnspecifiedMatching
 MONDO:0003185	owl:equivalentClass	DOID:4877	semapv:UnspecifiedMatching
 MONDO:0003186	owl:equivalentClass	DOID:4878	semapv:UnspecifiedMatching
@@ -12368,6 +12394,7 @@ MONDO:0003304	owl:equivalentClass	DOID:5151	semapv:UnspecifiedMatching
 MONDO:0003305	owl:equivalentClass	DOID:5152	semapv:UnspecifiedMatching
 MONDO:0003306	owl:equivalentClass	DOID:5153	semapv:UnspecifiedMatching
 MONDO:0003307	owl:equivalentClass	DOID:5155	semapv:UnspecifiedMatching
+MONDO:0003308	owl:equivalentClass	DOID:5157	semapv:UnspecifiedMatching
 MONDO:0003310	owl:equivalentClass	DOID:5161	semapv:UnspecifiedMatching
 MONDO:0003311	owl:equivalentClass	DOID:5166	semapv:UnspecifiedMatching
 MONDO:0003312	owl:equivalentClass	DOID:5169	semapv:UnspecifiedMatching
@@ -13839,7 +13866,6 @@ MONDO:0004953	owl:equivalentClass	DOID:3008	semapv:UnspecifiedMatching
 MONDO:0004957	owl:equivalentClass	DOID:3030	semapv:UnspecifiedMatching
 MONDO:0004958	owl:equivalentClass	DOID:0050866	semapv:UnspecifiedMatching
 MONDO:0004959	owl:equivalentClass	DOID:6536	semapv:UnspecifiedMatching
-MONDO:0004963	owl:equivalentClass	DOID:0050523	semapv:UnspecifiedMatching
 MONDO:0004965	owl:equivalentClass	DOID:3025	semapv:UnspecifiedMatching
 MONDO:0004966	owl:equivalentClass	DOID:4029	semapv:UnspecifiedMatching
 MONDO:0004967	owl:equivalentClass	DOID:9952	semapv:UnspecifiedMatching
@@ -14568,6 +14594,7 @@ MONDO:0006228	owl:equivalentClass	DOID:5593	semapv:UnspecifiedMatching
 MONDO:0006229	owl:equivalentClass	DOID:6552	semapv:UnspecifiedMatching
 MONDO:0006230	owl:equivalentClass	DOID:5516	semapv:UnspecifiedMatching
 MONDO:0006234	owl:equivalentClass	DOID:8634	semapv:UnspecifiedMatching
+MONDO:0006235	owl:equivalentClass	DOID:2411	semapv:UnspecifiedMatching
 MONDO:0006238	owl:equivalentClass	DOID:6255	semapv:UnspecifiedMatching
 MONDO:0006243	owl:equivalentClass	DOID:0060534	semapv:UnspecifiedMatching
 MONDO:0006244	owl:equivalentClass	DOID:0060079	semapv:UnspecifiedMatching
@@ -14582,6 +14609,7 @@ MONDO:0006280	owl:equivalentClass	DOID:5766	semapv:UnspecifiedMatching
 MONDO:0006281	owl:equivalentClass	DOID:0080305	semapv:UnspecifiedMatching
 MONDO:0006282	owl:equivalentClass	DOID:2689	semapv:UnspecifiedMatching
 MONDO:0006287	owl:equivalentClass	DOID:4719	semapv:UnspecifiedMatching
+MONDO:0006288	owl:equivalentClass	DOID:0080347	semapv:UnspecifiedMatching
 MONDO:0006292	owl:equivalentClass	DOID:1790	semapv:UnspecifiedMatching
 MONDO:0006292	owl:equivalentClass	omim:156240	semapv:UnspecifiedMatching
 MONDO:0006294	owl:equivalentClass	DOID:5158	semapv:UnspecifiedMatching
@@ -14660,6 +14688,7 @@ MONDO:0006521	owl:equivalentClass	DOID:4399	semapv:UnspecifiedMatching
 MONDO:0006522	owl:equivalentClass	DOID:13072	semapv:UnspecifiedMatching
 MONDO:0006523	owl:equivalentClass	DOID:2722	semapv:UnspecifiedMatching
 MONDO:0006524	owl:equivalentClass	DOID:0060344	semapv:UnspecifiedMatching
+MONDO:0006525	owl:equivalentClass	DOID:3042	semapv:UnspecifiedMatching
 MONDO:0006526	owl:equivalentClass	DOID:10612	semapv:UnspecifiedMatching
 MONDO:0006527	owl:equivalentClass	DOID:11156	semapv:UnspecifiedMatching
 MONDO:0006528	owl:equivalentClass	DOID:0050487	semapv:UnspecifiedMatching
@@ -14983,6 +15012,7 @@ MONDO:0006970	owl:equivalentClass	DOID:12905	semapv:UnspecifiedMatching
 MONDO:0006971	owl:equivalentClass	DOID:1896	semapv:UnspecifiedMatching
 MONDO:0006972	owl:equivalentClass	DOID:4374	semapv:UnspecifiedMatching
 MONDO:0006974	owl:equivalentClass	DOID:3098	semapv:UnspecifiedMatching
+MONDO:0006975	owl:equivalentClass	DOID:4310	semapv:UnspecifiedMatching
 MONDO:0006976	owl:equivalentClass	DOID:4430	semapv:UnspecifiedMatching
 MONDO:0006977	owl:equivalentClass	DOID:11997	semapv:UnspecifiedMatching
 MONDO:0006978	owl:equivalentClass	DOID:2533	semapv:UnspecifiedMatching
@@ -26236,6 +26266,7 @@ MONDO:0016691	owl:equivalentClass	DOID:4851	semapv:UnspecifiedMatching
 MONDO:0016692	owl:equivalentClass	DOID:4845	semapv:UnspecifiedMatching
 MONDO:0016693	owl:equivalentClass	DOID:5077	semapv:UnspecifiedMatching
 MONDO:0016695	owl:equivalentClass	DOID:3181	semapv:UnspecifiedMatching
+MONDO:0016698	owl:equivalentClass	DOID:4844	semapv:UnspecifiedMatching
 MONDO:0016699	owl:equivalentClass	DOID:5075	semapv:UnspecifiedMatching
 MONDO:0016700	owl:equivalentClass	DOID:5074	semapv:UnspecifiedMatching
 MONDO:0016702	owl:equivalentClass	DOID:7912	semapv:UnspecifiedMatching
@@ -26594,6 +26625,7 @@ MONDO:0019046	owl:equivalentClass	DOID:0060786	semapv:UnspecifiedMatching
 MONDO:0019050	owl:equivalentClass	DOID:2860	semapv:UnspecifiedMatching
 MONDO:0019052	owl:equivalentClass	DOID:655	semapv:UnspecifiedMatching
 MONDO:0019053	owl:equivalentClass	DOID:906	semapv:UnspecifiedMatching
+MONDO:0019056	owl:equivalentClass	DOID:440	semapv:UnspecifiedMatching
 MONDO:0019064	owl:equivalentClass	DOID:2476	semapv:UnspecifiedMatching
 MONDO:0019065	owl:equivalentClass	DOID:9120	semapv:UnspecifiedMatching
 MONDO:0019071	owl:equivalentClass	DOID:0111655	semapv:UnspecifiedMatching
@@ -26603,6 +26635,7 @@ MONDO:0019073	owl:equivalentClass	omim:137940	semapv:UnspecifiedMatching
 MONDO:0019078	owl:equivalentClass	DOID:0060565	semapv:UnspecifiedMatching
 MONDO:0019082	owl:equivalentClass	DOID:8506	semapv:UnspecifiedMatching
 MONDO:0019086	owl:equivalentClass	DOID:1107	semapv:UnspecifiedMatching
+MONDO:0019087	owl:equivalentClass	DOID:4947	semapv:UnspecifiedMatching
 MONDO:0019095	owl:equivalentClass	DOID:3482	semapv:UnspecifiedMatching
 MONDO:0019100	owl:equivalentClass	DOID:8869	semapv:UnspecifiedMatching
 MONDO:0019107	owl:equivalentClass	DOID:0050641	semapv:UnspecifiedMatching
@@ -26666,6 +26699,7 @@ MONDO:0019312	owl:equivalentClass	DOID:3753	semapv:UnspecifiedMatching
 MONDO:0019313	owl:equivalentClass	DOID:0050580	semapv:UnspecifiedMatching
 MONDO:0019315	owl:equivalentClass	DOID:3665	semapv:UnspecifiedMatching
 MONDO:0019316	owl:equivalentClass	DOID:12309	semapv:UnspecifiedMatching
+MONDO:0019337	owl:equivalentClass	DOID:8502	semapv:UnspecifiedMatching
 MONDO:0019338	owl:equivalentClass	DOID:11335	semapv:UnspecifiedMatching
 MONDO:0019340	owl:equivalentClass	DOID:419	semapv:UnspecifiedMatching
 MONDO:0019342	owl:equivalentClass	DOID:0050569	semapv:UnspecifiedMatching
@@ -26704,6 +26738,7 @@ MONDO:0019464	owl:equivalentClass	DOID:0060125	semapv:UnspecifiedMatching
 MONDO:0019465	owl:equivalentClass	DOID:0080211	semapv:UnspecifiedMatching
 MONDO:0019469	owl:equivalentClass	DOID:0050751	semapv:UnspecifiedMatching
 MONDO:0019470	owl:equivalentClass	DOID:1035	semapv:UnspecifiedMatching
+MONDO:0019471	owl:equivalentClass	DOID:0050523	semapv:UnspecifiedMatching
 MONDO:0019475	owl:equivalentClass	omim:618398	semapv:UnspecifiedMatching
 MONDO:0019480	owl:equivalentClass	DOID:7146	semapv:UnspecifiedMatching
 MONDO:0019483	owl:equivalentClass	DOID:5821	semapv:UnspecifiedMatching
@@ -27011,6 +27046,7 @@ MONDO:0021024	owl:equivalentClass	omim:611162	semapv:UnspecifiedMatching
 MONDO:0021025	owl:equivalentClass	omim:118900	semapv:UnspecifiedMatching
 MONDO:0021035	owl:equivalentClass	DOID:0080628	semapv:UnspecifiedMatching
 MONDO:0021035	owl:equivalentClass	omim:203650	semapv:UnspecifiedMatching
+MONDO:0021039	owl:equivalentClass	DOID:4985	semapv:UnspecifiedMatching
 MONDO:0021048	owl:equivalentClass	DOID:4658	semapv:UnspecifiedMatching
 MONDO:0021054	owl:equivalentClass	DOID:0080639	semapv:UnspecifiedMatching
 MONDO:0021055	owl:equivalentClass	DOID:0050424	semapv:UnspecifiedMatching

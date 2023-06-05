@@ -2,173 +2,6 @@
 {
   "graphs" : [
     {
-      "id" : "urn:clique:c4b1ad4946b0dc087295d3ed854266129a55d98c5448ef3e0224d168853793a5",
-      "nodes" : [
-        {
-          "id" : "MONDO:0003252",
-          "type" : "CLASS",
-          "lbl" : "granular cell cancer"
-        },
-        {
-          "id" : "DOID:2410",
-          "type" : "CLASS",
-          "lbl" : "skin granular cell tumor"
-        },
-        {
-          "id" : "MONDO:0002291",
-          "type" : "CLASS",
-          "lbl" : "cutaneous granular cell tumor"
-        },
-        {
-          "id" : "MONDO:0006235",
-          "type" : "CLASS",
-          "lbl" : "granular cell tumor"
-        },
-        {
-          "id" : "DOID:5042",
-          "type" : "CLASS",
-          "lbl" : "malignant granular cell myoblastoma"
-        },
-        {
-          "id" : "DOID:5039",
-          "type" : "CLASS",
-          "lbl" : "myoblastoma"
-        },
-        {
-          "id" : "DOID:7639",
-          "type" : "CLASS",
-          "lbl" : "malignant granular cell skin tumor"
-        },
-        {
-          "id" : "DOID:2411",
-          "type" : "CLASS",
-          "lbl" : "granular cell tumor"
-        },
-        {
-          "id" : "MONDO:0004314",
-          "type" : "CLASS",
-          "lbl" : "malignant cutaneous granular cell skin tumor"
-        },
-        {
-          "id" : "MONDO:0003250",
-          "type" : "CLASS",
-          "lbl" : "benign granular cell tumor"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "DOID:2410",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0002291",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0004314",
-          "pred" : "siblingOf",
-          "obj" : "DOID:7639",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0002291",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0006235",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:2411",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0006235",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0003252",
-          "pred" : "siblingOf",
-          "obj" : "DOID:5042",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.9999999999999998
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0003250",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0006235",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:5039",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0003250",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "DOID:2410",
-            "MONDO:0002291"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "MONDO:0006235",
-            "DOID:2411"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "MONDO:0003250",
-            "DOID:5039"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../c4b1ad4946b0dc087295d3ed854266129a55d98c5448ef3e0224d168853793a5.png)
-```json
-{
-  "graphs" : [
-    {
       "id" : "urn:clique:b0cf947bf4215888b13574076e89d84a21f3831ed8a695ef26331b375ccb6090",
       "nodes" : [
         {
@@ -324,468 +157,7 @@
 {
   "graphs" : [
     {
-      "id" : "urn:clique:1e44781efb7271ea895be9b633b71b965ca9847302aab392f72def581bb6d2c2",
-      "nodes" : [
-        {
-          "id" : "DOID:2025",
-          "type" : "CLASS",
-          "lbl" : "gestational choriocarcinoma"
-        },
-        {
-          "id" : "DOID:2024",
-          "type" : "CLASS",
-          "lbl" : "placental choriocarcinoma"
-        },
-        {
-          "id" : "DOID:3594",
-          "type" : "CLASS",
-          "lbl" : "choriocarcinoma"
-        },
-        {
-          "id" : "MONDO:0020550",
-          "type" : "CLASS",
-          "lbl" : "gestational choriocarcinoma"
-        },
-        {
-          "id" : "MONDO:0005207",
-          "type" : "CLASS",
-          "lbl" : "choriocarcinoma"
-        },
-        {
-          "id" : "MONDO:0006374",
-          "type" : "CLASS",
-          "lbl" : "placental choriocarcinoma"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "DOID:2024",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0006374",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0006374",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0020550",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:3594",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0005207",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:2024",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:3594",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:2025",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:3594",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:2025",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0020550",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0020550",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0005207",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0006374",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0005207",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:2024",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:2025",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "DOID:3594",
-            "MONDO:0005207"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:2025",
-            "MONDO:0020550"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:2024",
-            "MONDO:0006374"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../1e44781efb7271ea895be9b633b71b965ca9847302aab392f72def581bb6d2c2.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:3ff33786727ad9ad8ccb0aca39def23864bcc75d153720c13c2f2630c5f8a9a3",
-      "nodes" : [
-        {
-          "id" : "MONDO:0021259",
-          "type" : "CLASS",
-          "lbl" : "prostate neoplasm"
-        },
-        {
-          "id" : "MONDO:0010811",
-          "type" : "CLASS",
-          "lbl" : "benign prostatic hyperplasia"
-        },
-        {
-          "id" : "OMIM:600082",
-          "type" : "CLASS",
-          "lbl" : "prostatic hyperplasia, benign"
-        },
-        {
-          "id" : "DOID:13206",
-          "type" : "CLASS",
-          "lbl" : "nodular prostate"
-        },
-        {
-          "id" : "MONDO:0002450",
-          "type" : "CLASS",
-          "lbl" : "prostatic adenoma"
-        },
-        {
-          "id" : "DOID:2883",
-          "type" : "CLASS",
-          "lbl" : "prostatic adenoma"
-        },
-        {
-          "id" : "DOID:11132",
-          "type" : "CLASS",
-          "lbl" : "prostatic hypertrophy"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "MONDO:0010811",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:600082",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:11132",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0010811",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0002450",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0021259",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:2883",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0002450",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:13206",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:11132",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:2883",
-          "pred" : "is_a",
-          "obj" : "MONDO:0010811",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.4999999999999999
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:13206",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0021259",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "DOID:2883",
-            "MONDO:0002450"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:13206",
-            "MONDO:0021259"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:11132",
-            "MONDO:0010811",
-            "OMIM:600082"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../3ff33786727ad9ad8ccb0aca39def23864bcc75d153720c13c2f2630c5f8a9a3.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:72ca67b2ffae1e0d09a641328778a74077853e3a73a0fc06b25c9035dd502fb0",
-      "nodes" : [
-        {
-          "id" : "DOID:4682",
-          "type" : "CLASS",
-          "lbl" : "extrahepatic bile duct carcinoma"
-        },
-        {
-          "id" : "DOID:3495",
-          "type" : "CLASS",
-          "lbl" : "extrahepatic bile duct adenocarcinoma"
-        },
-        {
-          "id" : "MONDO:0002665",
-          "type" : "CLASS",
-          "lbl" : "extrahepatic bile duct adenocarcinoma"
-        },
-        {
-          "id" : "MONDO:0019087",
-          "type" : "CLASS",
-          "lbl" : "cholangiocarcinoma"
-        },
-        {
-          "id" : "MONDO:0003090",
-          "type" : "CLASS",
-          "lbl" : "extrahepatic bile duct carcinoma"
-        },
-        {
-          "id" : "DOID:4947",
-          "type" : "CLASS",
-          "lbl" : "cholangiocarcinoma"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "DOID:3495",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:4947",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:3495",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:4682",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0019087",
-          "pred" : "is_a",
-          "obj" : "DOID:4947",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.4999999999999999
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:4682",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:4947",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:3495",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0002665",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:4682",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0003090",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0002665",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0003090",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0019087",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0003090",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0019087",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0002665",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "DOID:3495",
-            "MONDO:0002665"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:4682",
-            "MONDO:0003090"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../72ca67b2ffae1e0d09a641328778a74077853e3a73a0fc06b25c9035dd502fb0.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:f21f29469f87234784ab611603d28264a0200d6800dfa3d4c2138ecc9b6500cb",
+      "id" : "urn:clique:7c6bd83edf1e2ffa958cb5e207c0cc32853303ccc2bfdd9349282353002e7faf",
       "nodes" : [
         {
           "id" : "MONDO:0014175",
@@ -905,290 +277,12 @@
   ]
 }
 ```
-![Clique image](../f21f29469f87234784ab611603d28264a0200d6800dfa3d4c2138ecc9b6500cb.png)
+![Clique image](../7c6bd83edf1e2ffa958cb5e207c0cc32853303ccc2bfdd9349282353002e7faf.png)
 ```json
 {
   "graphs" : [
     {
-      "id" : "urn:clique:1571619ab79184a7f417c08e27b5e1b4ac6c640dd1349ca30029d25af6079142",
-      "nodes" : [
-        {
-          "id" : "DOID:5343",
-          "type" : "CLASS",
-          "lbl" : "central nervous system endodermal sinus tumor"
-        },
-        {
-          "id" : "DOID:5342",
-          "type" : "CLASS",
-          "lbl" : "childhood endodermal sinus tumor"
-        },
-        {
-          "id" : "MONDO:0005744",
-          "type" : "CLASS",
-          "lbl" : "yolk sac tumor"
-        },
-        {
-          "id" : "MONDO:0003400",
-          "type" : "CLASS",
-          "lbl" : "childhood endodermal sinus tumor"
-        },
-        {
-          "id" : "MONDO:0003401",
-          "type" : "CLASS",
-          "lbl" : "central nervous system endodermal sinus tumor"
-        },
-        {
-          "id" : "DOID:1911",
-          "type" : "CLASS",
-          "lbl" : "endodermal sinus tumor"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "MONDO:0003401",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0003400",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0003400",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0005744",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:1911",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0005744",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:5342",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:1911",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:5342",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0003400",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0003401",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0005744",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:5343",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0003401",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "DOID:1911",
-            "MONDO:0005744"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "MONDO:0003400",
-            "DOID:5342"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "MONDO:0003401",
-            "DOID:5343"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../1571619ab79184a7f417c08e27b5e1b4ac6c640dd1349ca30029d25af6079142.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:903669ceb5b2c722f3574a7a6525fd8eec258e805c61b77a0fd6aec66a19d14a",
-      "nodes" : [
-        {
-          "id" : "DOID:5567",
-          "type" : "CLASS",
-          "lbl" : "ovarian germ cell teratoma"
-        },
-        {
-          "id" : "MONDO:0003821",
-          "type" : "CLASS",
-          "lbl" : "ovarian biphasic or triphasic teratoma"
-        },
-        {
-          "id" : "DOID:6331",
-          "type" : "CLASS",
-          "lbl" : "immature teratoma of ovary"
-        },
-        {
-          "id" : "MONDO:0018369",
-          "type" : "CLASS",
-          "lbl" : "immature ovarian teratoma"
-        },
-        {
-          "id" : "MONDO:0005602",
-          "type" : "CLASS",
-          "lbl" : "ovarian teratoma"
-        },
-        {
-          "id" : "DOID:6232",
-          "type" : "CLASS",
-          "lbl" : "ovarian biphasic or triphasic teratoma"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "DOID:6232",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0003821",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0018369",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0003821",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:6331",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0018369",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0003821",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0005602",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:5567",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0005602",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0018369",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0005602",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:6232",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:5567",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "MONDO:0005602",
-            "DOID:5567"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:6331",
-            "MONDO:0018369"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:6232",
-            "MONDO:0003821"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../903669ceb5b2c722f3574a7a6525fd8eec258e805c61b77a0fd6aec66a19d14a.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:d3acc6bf31e8ee2a525e5dabec631f7e07e0c4019ce0c0934b0ad2295f20e39f",
+      "id" : "urn:clique:b74f1b1c731daeaa47a4f8c18f444070092489af60117c423a08d9ac4047c2bc",
       "nodes" : [
         {
           "id" : "DOID:676",
@@ -1312,135 +406,7 @@
   ]
 }
 ```
-![Clique image](../d3acc6bf31e8ee2a525e5dabec631f7e07e0c4019ce0c0934b0ad2295f20e39f.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:c75b8935aae97720b8e674cf444b83cbe17f3b63337f3ad1cb1f1481b2954065",
-      "nodes" : [
-        {
-          "id" : "MONDO:0004967",
-          "type" : "CLASS",
-          "lbl" : "acute lymphoblastic leukemia"
-        },
-        {
-          "id" : "DOID:9952",
-          "type" : "CLASS",
-          "lbl" : "acute lymphoblastic leukemia"
-        },
-        {
-          "id" : "DOID:1037",
-          "type" : "CLASS",
-          "lbl" : "lymphoid leukemia"
-        },
-        {
-          "id" : "MONDO:0010643",
-          "type" : "CLASS",
-          "lbl" : "acute leukemia"
-        },
-        {
-          "id" : "DOID:12603",
-          "type" : "CLASS",
-          "lbl" : "acute leukemia"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "DOID:12603",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:1037",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:9952",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:12603",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:9952",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0004967",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0004967",
-          "pred" : "is_a",
-          "obj" : "DOID:1037",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.4999999999999999
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:12603",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0010643",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:9952",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:1037",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0004967",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0010643",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "DOID:12603",
-            "MONDO:0010643"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:9952",
-            "MONDO:0004967"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../c75b8935aae97720b8e674cf444b83cbe17f3b63337f3ad1cb1f1481b2954065.png)
+![Clique image](../b74f1b1c731daeaa47a4f8c18f444070092489af60117c423a08d9ac4047c2bc.png)
 ```json
 {
   "graphs" : [
@@ -1560,7 +526,7 @@
 {
   "graphs" : [
     {
-      "id" : "urn:clique:d74ec54c146764fc30dd10d8c094778891ae84f827a2d756552cd9a1f04a9e08",
+      "id" : "urn:clique:00e9bf4197009d202c3456f652e1dc56976229620950c333c939c4f88aba6487",
       "nodes" : [
         {
           "id" : "MONDO:0003540",
@@ -1590,36 +556,14 @@
       ],
       "edges" : [
         {
-          "sub" : "DOID:0050523",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:5603",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:5603",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0004963",
+          "sub" : "MONDO:0004963",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0050523",
           "meta" : {
             "basicPropertyValues" : [
               {
                 "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0050523",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0019471",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
+                "val" : 0.9999999999999998
               }
             ]
           }
@@ -1639,13 +583,26 @@
         },
         {
           "sub" : "DOID:0050523",
-          "pred" : "is_a",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0019471",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:5603",
+          "pred" : "owl:equivalentClass",
           "obj" : "MONDO:0004963",
           "meta" : {
             "basicPropertyValues" : [
               {
                 "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.4999999999999999
+                "val" : 8.0
               }
             ]
           }
@@ -1669,7 +626,7 @@
   ]
 }
 ```
-![Clique image](../d74ec54c146764fc30dd10d8c094778891ae84f827a2d756552cd9a1f04a9e08.png)
+![Clique image](../00e9bf4197009d202c3456f652e1dc56976229620950c333c939c4f88aba6487.png)
 ```json
 {
   "graphs" : [
@@ -1704,27 +661,14 @@
       ],
       "edges" : [
         {
-          "sub" : "DOID:0050987",
+          "sub" : "DOID:10579",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0000562",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0060786",
-          "pred" : "is_a",
           "obj" : "MONDO:0019046",
           "meta" : {
             "basicPropertyValues" : [
               {
                 "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.4999999999999999
+                "val" : 8.0
               }
             ]
           }
@@ -1743,9 +687,9 @@
           }
         },
         {
-          "sub" : "DOID:10579",
+          "sub" : "DOID:0050987",
           "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0019046",
+          "obj" : "MONDO:0000562",
           "meta" : {
             "basicPropertyValues" : [
               {
@@ -1756,11 +700,15 @@
           }
         },
         {
-          "sub" : "DOID:0060786",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:10579",
+          "sub" : "MONDO:0019046",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0060786",
           "meta" : {
             "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
             ]
           }
         }
@@ -1784,562 +732,6 @@
 }
 ```
 ![Clique image](../ff01de44b88489a81104aea607b21505c9b0c561a48f723a20e87b3623bea769.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:faf5ddc78a1ebf7a8f811532377c012d8f38235309973131933cb392fd89c06b",
-      "nodes" : [
-        {
-          "id" : "DOID:3369",
-          "type" : "CLASS",
-          "lbl" : "Ewing sarcoma"
-        },
-        {
-          "id" : "MONDO:0006094",
-          "type" : "CLASS",
-          "lbl" : "Askin tumor"
-        },
-        {
-          "id" : "MONDO:0012817",
-          "type" : "CLASS",
-          "lbl" : "Ewing sarcoma"
-        },
-        {
-          "id" : "OMIM:612219",
-          "type" : "CLASS",
-          "lbl" : "ewing sarcoma"
-        },
-        {
-          "id" : "DOID:0050608",
-          "type" : "CLASS",
-          "lbl" : "Askin's tumor"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "MONDO:0012817",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:612219",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0050608",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0006094",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:3369",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0012817",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0050608",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:3369",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0050608",
-          "pred" : "is_a",
-          "obj" : "MONDO:0012817",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.4999999999999999
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "DOID:0050608",
-            "MONDO:0006094"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "DOID:3369",
-            "MONDO:0012817",
-            "OMIM:612219"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../faf5ddc78a1ebf7a8f811532377c012d8f38235309973131933cb392fd89c06b.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:071c192a6d1e668cb23601f759f9cd0810926c15303a614e01e8366c436ce588",
-      "nodes" : [
-        {
-          "id" : "DOID:5556",
-          "type" : "CLASS",
-          "lbl" : "testicular malignant germ cell cancer"
-        },
-        {
-          "id" : "MONDO:0010108",
-          "type" : "CLASS",
-          "lbl" : "testicular germ cell tumor"
-        },
-        {
-          "id" : "DOID:5557",
-          "type" : "CLASS",
-          "lbl" : "testicular germ cell cancer"
-        },
-        {
-          "id" : "OMIM:273300",
-          "type" : "CLASS",
-          "lbl" : "testicular germ cell tumor"
-        },
-        {
-          "id" : "MONDO:0003510",
-          "type" : "CLASS",
-          "lbl" : "malignant testicular germ cell tumor"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "DOID:5556",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0003510",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:5557",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0010108",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0010108",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:273300",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:5556",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:5557",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0003510",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0010108",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "MONDO:0003510",
-            "DOID:5556"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "OMIM:273300",
-            "MONDO:0010108",
-            "DOID:5557"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../071c192a6d1e668cb23601f759f9cd0810926c15303a614e01e8366c436ce588.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:f39247d49776211be2c849377108a29d5599ee8e08ef19ef82363b9df87989d8",
-      "nodes" : [
-        {
-          "id" : "DOID:2156",
-          "type" : "CLASS",
-          "lbl" : "ovarian germ cell cancer"
-        },
-        {
-          "id" : "OMIM:603737",
-          "type" : "CLASS",
-          "lbl" : "ovarian germ cell cancer"
-        },
-        {
-          "id" : "DOID:2155",
-          "type" : "CLASS",
-          "lbl" : "malignant ovarian germ cell neoplasm"
-        },
-        {
-          "id" : "MONDO:0011366",
-          "type" : "CLASS",
-          "lbl" : "ovarian germ cell tumor"
-        },
-        {
-          "id" : "MONDO:0018171",
-          "type" : "CLASS",
-          "lbl" : "malignant germ cell tumor of ovary"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "DOID:2155",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0018171",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0018171",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0011366",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:2155",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:2156",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:2156",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0011366",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0011366",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:603737",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "MONDO:0011366",
-            "OMIM:603737",
-            "DOID:2156"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "MONDO:0018171",
-            "DOID:2155"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../f39247d49776211be2c849377108a29d5599ee8e08ef19ef82363b9df87989d8.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:19e120db570a1cd4b3c8adef99ab0079485faba9645d0f6831c424ebf1498ddd",
-      "nodes" : [
-        {
-          "id" : "MONDO:0000515",
-          "type" : "CLASS",
-          "lbl" : "bone chondrosarcoma"
-        },
-        {
-          "id" : "DOID:0050897",
-          "type" : "CLASS",
-          "lbl" : "bone chondrosarcoma"
-        },
-        {
-          "id" : "MONDO:0008977",
-          "type" : "CLASS",
-          "lbl" : "chondrosarcoma"
-        },
-        {
-          "id" : "DOID:3371",
-          "type" : "CLASS",
-          "lbl" : "chondrosarcoma"
-        },
-        {
-          "id" : "OMIM:215300",
-          "type" : "CLASS",
-          "lbl" : "chondrosarcoma"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "DOID:3371",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0008977",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0050897",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0000515",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:0050897",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:3371",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0008977",
-          "pred" : "owl:equivalentClass",
-          "obj" : "OMIM:215300",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0000515",
-          "pred" : "asserted_is_a",
-          "obj" : "MONDO:0008977",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "MONDO:0008977",
-            "DOID:3371",
-            "OMIM:215300"
-          ]
-        },
-        {
-          "nodeIds" : [
-            "MONDO:0000515",
-            "DOID:0050897"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../19e120db570a1cd4b3c8adef99ab0079485faba9645d0f6831c424ebf1498ddd.png)
-```json
-{
-  "graphs" : [
-    {
-      "id" : "urn:clique:93717668628d8f0a59020ad48d27a7561469905b3b294eb3fe84d93343a5e928",
-      "nodes" : [
-        {
-          "id" : "DOID:3948",
-          "type" : "CLASS",
-          "lbl" : "adrenocortical carcinoma"
-        },
-        {
-          "id" : "DOID:3959",
-          "type" : "CLASS",
-          "lbl" : "adrenal cortical adenocarcinoma"
-        },
-        {
-          "id" : "DOID:660",
-          "type" : "CLASS",
-          "lbl" : "adrenal cortex cancer"
-        },
-        {
-          "id" : "MONDO:0006639",
-          "type" : "CLASS",
-          "lbl" : "adrenal cortex carcinoma"
-        }
-      ],
-      "edges" : [
-        {
-          "sub" : "DOID:3948",
-          "pred" : "owl:equivalentClass",
-          "obj" : "MONDO:0006639",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 8.0
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:3959",
-          "pred" : "is_a",
-          "obj" : "MONDO:0006639",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.4999999999999999
-              }
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:3959",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:3948",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:3948",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:660",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "DOID:3959",
-          "pred" : "asserted_is_a",
-          "obj" : "DOID:660",
-          "meta" : {
-            "basicPropertyValues" : [
-            ]
-          }
-        },
-        {
-          "sub" : "MONDO:0006639",
-          "pred" : "is_a",
-          "obj" : "DOID:660",
-          "meta" : {
-            "basicPropertyValues" : [
-              {
-                "pred" : "https://w3id.org/kgviz/penwidth",
-                "val" : 0.4999999999999999
-              }
-            ]
-          }
-        }
-      ],
-      "equivalentNodesSets" : [
-        {
-          "nodeIds" : [
-            "MONDO:0006639",
-            "DOID:3948"
-          ]
-        }
-      ]
-    }
-  ]
-}
-```
-![Clique image](../93717668628d8f0a59020ad48d27a7561469905b3b294eb3fe84d93343a5e928.png)
 ```json
 {
   "graphs" : [
@@ -2439,6 +831,112 @@
 }
 ```
 ![Clique image](../2e76a66d31ab3dafc4ebe707682d4ab9ec79ed91a10c7d218fd722fbf6dbd44d.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:103a4a90641ac46ed6fa47ed6999c6b7e9da6cf41bcd42ed59797575ef3384ef",
+      "nodes" : [
+        {
+          "id" : "MONDO:0002450",
+          "type" : "CLASS",
+          "lbl" : "prostatic adenoma"
+        },
+        {
+          "id" : "MONDO:0010811",
+          "type" : "CLASS",
+          "lbl" : "benign prostatic hyperplasia"
+        },
+        {
+          "id" : "OMIM:600082",
+          "type" : "CLASS",
+          "lbl" : "prostatic hyperplasia, benign"
+        },
+        {
+          "id" : "DOID:2883",
+          "type" : "CLASS",
+          "lbl" : "prostatic adenoma"
+        },
+        {
+          "id" : "DOID:11132",
+          "type" : "CLASS",
+          "lbl" : "prostatic hypertrophy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:2883",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0002450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010811",
+          "pred" : "siblingOf",
+          "obj" : "DOID:2883",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:11132",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010811",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010811",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600082",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:2883",
+            "MONDO:0002450"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "DOID:11132",
+            "MONDO:0010811",
+            "OMIM:600082"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../103a4a90641ac46ed6fa47ed6999c6b7e9da6cf41bcd42ed59797575ef3384ef.png)
 ```json
 {
   "graphs" : [
@@ -2545,3 +1043,1023 @@
 }
 ```
 ![Clique image](../3e337326141a7778574482eefea7c394e6f6129224fc398d2cebc570e9d8e3b6.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:5d6bffba35c86de6e1fa8d349f0a56355c18c26aa00fb83781eb2f6320edd7b7",
+      "nodes" : [
+        {
+          "id" : "OMIM:600795",
+          "type" : "CLASS",
+          "lbl" : "frontotemporal dementia and/or amyotrophic lateral sclerosis 7"
+        },
+        {
+          "id" : "DOID:0111227",
+          "type" : "CLASS",
+          "lbl" : "chromosome 3-linked frontotemporal dementia"
+        },
+        {
+          "id" : "OMIM:614696",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "MONDO:0010936",
+          "type" : "CLASS",
+          "lbl" : "frontotemporal dementia and/or amyotrophic lateral sclerosis 7"
+        },
+        {
+          "id" : "DOID:0060208",
+          "type" : "CLASS",
+          "lbl" : "obsolete amyotrophic lateral sclerosis type 17"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0111227",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010936",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010936",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0060208",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010936",
+          "pred" : "siblingOf",
+          "obj" : "OMIM:614696",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010936",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:600795",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010936",
+            "DOID:0111227",
+            "OMIM:600795"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../5d6bffba35c86de6e1fa8d349f0a56355c18c26aa00fb83781eb2f6320edd7b7.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:faf5ddc78a1ebf7a8f811532377c012d8f38235309973131933cb392fd89c06b",
+      "nodes" : [
+        {
+          "id" : "DOID:3369",
+          "type" : "CLASS",
+          "lbl" : "Ewing sarcoma"
+        },
+        {
+          "id" : "MONDO:0006094",
+          "type" : "CLASS",
+          "lbl" : "Askin tumor"
+        },
+        {
+          "id" : "MONDO:0012817",
+          "type" : "CLASS",
+          "lbl" : "Ewing sarcoma"
+        },
+        {
+          "id" : "OMIM:612219",
+          "type" : "CLASS",
+          "lbl" : "ewing sarcoma"
+        },
+        {
+          "id" : "DOID:0050608",
+          "type" : "CLASS",
+          "lbl" : "Askin's tumor"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0050608",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0006094",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:3369",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012817",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012817",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0050608",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012817",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:612219",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0050608",
+            "MONDO:0006094"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "DOID:3369",
+            "MONDO:0012817",
+            "OMIM:612219"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../faf5ddc78a1ebf7a8f811532377c012d8f38235309973131933cb392fd89c06b.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:91b03fe7aad87c0f696bf778dee0d139db753824b61299a92057164b5caeafe0",
+      "nodes" : [
+        {
+          "id" : "MONDO:0010600",
+          "type" : "CLASS",
+          "lbl" : "granulomatous disease, chronic, X-linked"
+        },
+        {
+          "id" : "DOID:0070195",
+          "type" : "CLASS",
+          "lbl" : "X-linked chronic granulomatous disease"
+        },
+        {
+          "id" : "DOID:0070190",
+          "type" : "CLASS",
+          "lbl" : "obsolete autosomal dominant chronic granulomatous disease"
+        },
+        {
+          "id" : "OMIM:306400",
+          "type" : "CLASS",
+          "lbl" : "granulomatous disease, chronic, X-linked"
+        },
+        {
+          "id" : "OMIM:138990",
+          "type" : "CLASS"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0070190",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0010600",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010600",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0070195",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010600",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:138990",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0010600",
+          "pred" : "siblingOf",
+          "obj" : "OMIM:306400",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0010600",
+            "DOID:0070190",
+            "OMIM:138990"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../91b03fe7aad87c0f696bf778dee0d139db753824b61299a92057164b5caeafe0.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:bb676936a5a9b9d7aad4c105255295d3f621a8227cf3e916415bd890dddac9c9",
+      "nodes" : [
+        {
+          "id" : "OMIM:159000",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0080094",
+          "type" : "CLASS",
+          "lbl" : "myofibrillar myopathy 3"
+        },
+        {
+          "id" : "OMIM:609200",
+          "type" : "CLASS",
+          "lbl" : "myopathy, myofibrillar, 3"
+        },
+        {
+          "id" : "MONDO:0012215",
+          "type" : "CLASS",
+          "lbl" : "myofibrillar myopathy 3"
+        },
+        {
+          "id" : "DOID:0110300",
+          "type" : "CLASS",
+          "lbl" : "obsolete autosomal dominant limb-girdle muscular dystrophy type 1A"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0080094",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0012215",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012215",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0110300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012215",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:609200",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0012215",
+          "pred" : "siblingOf",
+          "obj" : "OMIM:159000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0080094",
+            "MONDO:0012215",
+            "OMIM:609200"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../bb676936a5a9b9d7aad4c105255295d3f621a8227cf3e916415bd890dddac9c9.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:48fd72d504062e6f847898419ca57d4a71fc4aa7d059cc75d362e87ef4b13741",
+      "nodes" : [
+        {
+          "id" : "OMIM:614562",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "OMIM:135900",
+          "type" : "CLASS",
+          "lbl" : "coffin-siris syndrome 1"
+        },
+        {
+          "id" : "OMIM:609943",
+          "type" : "CLASS"
+        },
+        {
+          "id" : "DOID:0070042",
+          "type" : "CLASS",
+          "lbl" : "Coffin-Siris syndrome 1"
+        },
+        {
+          "id" : "MONDO:0007617",
+          "type" : "CLASS",
+          "lbl" : "Coffin-Siris syndrome 1"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0007617",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:135900",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007617",
+          "pred" : "siblingOf",
+          "obj" : "OMIM:614562",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0070042",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007617",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007617",
+          "pred" : "siblingOf",
+          "obj" : "OMIM:609943",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0007617",
+            "OMIM:135900",
+            "DOID:0070042"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../48fd72d504062e6f847898419ca57d4a71fc4aa7d059cc75d362e87ef4b13741.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:0bccca2242a1db418ea81b4604b278d301d2163bb77c54cdd8954afe5553500d",
+      "nodes" : [
+        {
+          "id" : "DOID:0060160",
+          "type" : "CLASS",
+          "lbl" : "childhood spinal muscular atrophy"
+        },
+        {
+          "id" : "DOID:13137",
+          "type" : "CLASS",
+          "lbl" : "Werdnig-Hoffmann disease"
+        },
+        {
+          "id" : "MONDO:0009669",
+          "type" : "CLASS",
+          "lbl" : "spinal muscular atrophy, type 1"
+        },
+        {
+          "id" : "OMIM:253300",
+          "type" : "CLASS",
+          "lbl" : "spinal muscular atrophy,  iia 1"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009669",
+          "pred" : "is_a",
+          "obj" : "DOID:0060160",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.4999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009669",
+          "pred" : "is_a",
+          "obj" : "DOID:0060160",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:13137",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0009669",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009669",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:253300",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:13137",
+            "MONDO:0009669",
+            "OMIM:253300"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../0bccca2242a1db418ea81b4604b278d301d2163bb77c54cdd8954afe5553500d.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:ad39ec1e38b314f6b42b61ea7033a2f2e43e0637b0d4a7ddd66b514437869c66",
+      "nodes" : [
+        {
+          "id" : "DOID:0111649",
+          "type" : "CLASS",
+          "lbl" : "ectodermal dysplasia, ectrodactyly, and macular dystrophy syndrome"
+        },
+        {
+          "id" : "MONDO:0009155",
+          "type" : "CLASS",
+          "lbl" : "EEM syndrome"
+        },
+        {
+          "id" : "MONDO:0021849",
+          "type" : "CLASS",
+          "lbl" : "obsolete alopecia macular degeneration growth retardation syndrome"
+        },
+        {
+          "id" : "OMIM:225280",
+          "type" : "CLASS",
+          "lbl" : "ectodermal dysplasia, ectrodactyly, and macular dystrophy syndrome"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0009155",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0111649",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0009155",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:225280",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0111649",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021849",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:225280",
+            "MONDO:0009155"
+          ]
+        },
+        {
+          "nodeIds" : [
+            "MONDO:0021849",
+            "DOID:0111649"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../ad39ec1e38b314f6b42b61ea7033a2f2e43e0637b0d4a7ddd66b514437869c66.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2632bbe93218d3a56d302b9a271ba0f94a5f979c5de05281b7675c9d66f3a244",
+      "nodes" : [
+        {
+          "id" : "DOID:417",
+          "type" : "CLASS",
+          "lbl" : "autoimmune disease"
+        },
+        {
+          "id" : "MONDO:0007179",
+          "type" : "CLASS",
+          "lbl" : "autoimmune disease"
+        },
+        {
+          "id" : "MONDO:0025512",
+          "type" : "CLASS",
+          "lbl" : "type II hypersensitivity reaction disease"
+        },
+        {
+          "id" : "OMIM:109100",
+          "type" : "CLASS",
+          "lbl" : "autoimmune disease"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:417",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0007179",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0007179",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:109100",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0025512",
+          "pred" : "is_a",
+          "obj" : "DOID:417",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.4999999999999999
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0025512",
+          "pred" : "asserted_is_a",
+          "obj" : "MONDO:0007179",
+          "meta" : {
+            "basicPropertyValues" : [
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:417",
+            "MONDO:0007179",
+            "OMIM:109100"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../2632bbe93218d3a56d302b9a271ba0f94a5f979c5de05281b7675c9d66f3a244.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:c4637d0d6852518eed08bb1b50dadad7e552cc5a41e511f8bad1af1cea97a560",
+      "nodes" : [
+        {
+          "id" : "DOID:0060600",
+          "type" : "CLASS",
+          "lbl" : "obsolete hereditary motor and sensory neuropathy with agenesis of the corpus callosum"
+        },
+        {
+          "id" : "MONDO:0000902",
+          "type" : "CLASS",
+          "lbl" : "agenesis of the corpus callosum with peripheral neuropathy"
+        },
+        {
+          "id" : "OMIM:218000",
+          "type" : "CLASS",
+          "lbl" : "agenesis of the corpus callosum with peripheral neuropathy"
+        },
+        {
+          "id" : "DOID:0090003",
+          "type" : "CLASS",
+          "lbl" : "agenesis of the corpus callosum with peripheral neuropathy"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0000902",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:218000",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060600",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0000902",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0000902",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0090003",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "OMIM:218000",
+            "MONDO:0000902",
+            "DOID:0060600"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../c4637d0d6852518eed08bb1b50dadad7e552cc5a41e511f8bad1af1cea97a560.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:2b5fe573de245b92bae9a4773b26de7f7c12e3d10f445d5ff06943198ae97416",
+      "nodes" : [
+        {
+          "id" : "DOID:0110305",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant limb-girdle muscular dystrophy type 1"
+        },
+        {
+          "id" : "MONDO:0021018",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant limb-girdle muscular dystrophy type 1D (DNAJB6)"
+        },
+        {
+          "id" : "OMIM:603511",
+          "type" : "CLASS",
+          "lbl" : "muscular dystrophy, limb-girdle, autosomal dominant 1"
+        },
+        {
+          "id" : "MONDO:0018098",
+          "type" : "CLASS",
+          "lbl" : "autosomal dominant limb-girdle muscular dystrophy type 1E (DES)"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "DOID:0110305",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0021018",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0021018",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:603511",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0018098",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0110305",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "DOID:0110305",
+            "MONDO:0021018",
+            "OMIM:603511"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../2b5fe573de245b92bae9a4773b26de7f7c12e3d10f445d5ff06943198ae97416.png)
+```json
+{
+  "graphs" : [
+    {
+      "id" : "urn:clique:b452a8213cb19e8aa1e8ffd14e77f8822b943d0eb6eea2076d5285d40a75153c",
+      "nodes" : [
+        {
+          "id" : "DOID:0060006",
+          "type" : "CLASS",
+          "lbl" : "obsolete artemis deficiency"
+        },
+        {
+          "id" : "MONDO:0011225",
+          "type" : "CLASS",
+          "lbl" : "severe combined immunodeficiency due to DCLRE1C deficiency"
+        },
+        {
+          "id" : "OMIM:602450",
+          "type" : "CLASS",
+          "lbl" : "severe combined immunodeficiency with sensitivity to ionizing radiation"
+        },
+        {
+          "id" : "DOID:0090012",
+          "type" : "CLASS",
+          "lbl" : "severe combined immunodeficiency with sensitivity to ionizing radiation"
+        }
+      ],
+      "edges" : [
+        {
+          "sub" : "MONDO:0011225",
+          "pred" : "owl:equivalentClass",
+          "obj" : "OMIM:602450",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "MONDO:0011225",
+          "pred" : "siblingOf",
+          "obj" : "DOID:0090012",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 0.9999999999999998
+              }
+            ]
+          }
+        },
+        {
+          "sub" : "DOID:0060006",
+          "pred" : "owl:equivalentClass",
+          "obj" : "MONDO:0011225",
+          "meta" : {
+            "basicPropertyValues" : [
+              {
+                "pred" : "https://w3id.org/kgviz/penwidth",
+                "val" : 8.0
+              }
+            ]
+          }
+        }
+      ],
+      "equivalentNodesSets" : [
+        {
+          "nodeIds" : [
+            "MONDO:0011225",
+            "OMIM:602450",
+            "DOID:0060006"
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+![Clique image](../b452a8213cb19e8aa1e8ffd14e77f8822b943d0eb6eea2076d5285d40a75153c.png)
