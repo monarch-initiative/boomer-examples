@@ -53,7 +53,7 @@ $(BOOMER_INPUT_DIR)/$(RUN_ID)/combined.sssom.tsv $(BOOMER_INPUT_DIR)/prefix.yaml
 		--config mondo-omim-ordo-do.symbiont.yaml \
 		--run-id $(RUN_ID)
 
-$(DATA_DIR)/$(RUN_ID).sssom.tsv: $(DATA_DIR)/mondo_all.sssom.tsv
+$(DATA_DIR)/$(RUN_ID).sssom.tsv: $(DATA_DIR)/mondo.sssom.tsv
 	sssom filter --object_id OMIM:% --object_id OMIMPS:% --object_id Orphanet:% --object_id DOID:% $< -o $@
 	sssom parse $@ -o $@
 
@@ -143,7 +143,8 @@ boomerang-reports: $(COMPARISON_DIR)/report.html $(COMPARISON_DIR)/report.yaml
 get-large-cliques:
 	python ../scripts/get_cliques.py from-reports --run-id $(RUN_ID) -t 20 -r $(COMPARISON_DIR)/report.yaml
 
-
+boomer-pipeline: labeled-db ../data/mondo_omim_ordo_do.sssom.tsv boomer_input/mondo_omim_ordo_do/combined.ptable.tsv \
+	delete-boomer-reports boomer reports uncommon_mappings boomerang-reports get-large-cliques
 # SEQUENCE
 # 1. make labeled-db -B
 # 2. make ../data/mondo_omim_ordo_do.sssom.tsv -B
